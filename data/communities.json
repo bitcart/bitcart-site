@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Telegram",
+        "url": "https://t.me/bitcartcc",
+        "icon": "mdi-telegram"
+    },
+    {
+        "name": "Github",
+        "url": "https://github.com/MrNaif2018/bitcart",
+        "icon": "mdi-github-circle"
+    }
+]

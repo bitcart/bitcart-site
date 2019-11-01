@@ -1,0 +1,91 @@
+<template>
+  <v-container>
+    <v-row id="features">
+      <v-col>
+        <h1 class="green--text text--darken-2">
+          Start Accepting Bitcoin Payments With 0% Fees &amp; No Third-party
+        </h1>
+        <p>
+          Bitcart is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free.
+          <br>
+          <span>
+            <v-icon @click.stop="showDetails = !showDetails">
+              mdi-information
+            </v-icon>
+          </span>
+          <span v-if="showDetails">
+            <br>Receive your bitcoin and altcoin payments without any fees or third-party involvement. You are your own bank. Funds go directly to your wallet; your private key is never required.
+          </span>
+        </p>
+        <div>
+          <v-btn class="success" href="https://admin.bitcartcc.com" target="blank_">
+            LIVE DEMO
+          </v-btn>
+          <v-btn class="success" @click.stop="showDonation">
+            &nbsp;DONATE&nbsp;
+            <v-icon>
+              mdi-chevron-right-circle
+            </v-icon>
+          </v-btn>
+        </div>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-carousel :dark="$vuetify.theme.dark" :light="!$vuetify.theme.dark" :hide-delimiters="true" :height="600">
+        <carousel-item v-for="feature in $options.features" :key="feature.text" :item="feature" />
+      </v-carousel>
+    </v-row>
+    <v-row id="community">
+      <h1 class="green--text text--darken-2">
+        JOIN THE COMMUNITY
+      </h1>
+    </v-row>
+    <v-row>
+      <p>Bitcart is an open-source project, not a company. We rely on a network of diverse contributors and users to provide support for numerous use-cases. Join us in improving, learning, and building Bitcart.</p>
+    </v-row>
+    <v-row>
+      <v-col v-for="community in $options.communities" :key="community.name">
+        <v-btn :href="community.url" target="_blank">
+          <v-icon size="30px">
+            {{ community.icon }}
+          </v-icon>
+          <h3>{{ community.name }}</h3>
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script>
+import CarouselItem from '@/components/CarouselItem.vue'
+import features from '@/data/features.json'
+import communities from '@/data/communities.json'
+export default {
+  features,
+  communities,
+  components: {
+    CarouselItem
+  },
+  data () {
+    return {
+      showDetails: false
+    }
+  },
+  methods: {
+    showDonation () {
+      this.$axios.get('https://demo.bitcartcc.com/rate').then((r) => {
+        this.amount = parseFloat(5 / r.data).toFixed(8) // 5$
+        this.$axios.post('https://demo.bitcartcc.com/invoices', { products: [2], amount: this.amount }).then((res) => {
+          window.open(`https://admin.bitcartcc.com/i/${res.data.id}`, '_blank')
+        })
+      })
+    }
+  }
+}
+</script>
+
+<style scoped>
+.feature-icon {
+  transform: translateY(-15px) !important;
+}
+</style>
