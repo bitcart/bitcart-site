@@ -6,7 +6,7 @@
           Start Accepting Bitcoin Payments With 0% Fees &amp; No Third-party
         </h1>
         <p>
-          Bitcart is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free.
+          BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free.
           <br>
           <span>
             <v-icon @click.stop="showDetails = !showDetails">
@@ -41,7 +41,7 @@
       </h1>
     </v-row>
     <v-row>
-      <p>Bitcart is an open-source project, not a company. We rely on a network of diverse contributors and users to provide support for numerous use-cases. Join us in improving, learning, and building Bitcart.</p>
+      <p>BitcartCC is an open-source project, not a company. We rely on a network of diverse contributors and users to provide support for numerous use-cases. Join us in improving, learning, and building BitcartCC.</p>
     </v-row>
     <v-row>
       <v-col v-for="community in $options.communities" :key="community.name">

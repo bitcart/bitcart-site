@@ -55,7 +55,7 @@
       fixed
       app
     >
-      <span>&copy; Bitcart 2018-2019</span>
+      <span>&copy; BitcartCC 2018-2019</span>
     </v-footer>
   </v-app>
 </template>
