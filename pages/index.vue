@@ -3,7 +3,7 @@
     <v-row id="features">
       <v-col>
         <h1 class="green--text text--darken-2">
-          Start Accepting Bitcoin Payments With 0% Fees &amp; No Third-party
+          Start Accepting Crypto Payments With 0% Fees &amp; No Third-party
         </h1>
         <p>
           BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free.
