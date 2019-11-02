@@ -75,7 +75,7 @@ export default {
     showDonation () {
       this.$axios.get('https://demo.bitcartcc.com/rate').then((r) => {
         this.amount = parseFloat(5 / r.data).toFixed(8) // 5$
-        this.$axios.post('https://demo.bitcartcc.com/invoices', { products: [2], amount: this.amount }).then((res) => {
+        this.$axios.post('https://demo.bitcartcc.com/invoices', { products: [5], amount: this.amount }).then((res) => {
           window.open(`https://admin.bitcartcc.com/i/${res.data.id}`, '_blank')
         })
       })
