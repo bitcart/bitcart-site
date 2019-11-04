@@ -8,5 +8,10 @@
         "name": "Github",
         "url": "https://github.com/MrNaif2018/bitcart",
         "icon": "mdi-github-circle"
+    },
+    {
+        "name": "Discord",
+        "url": "https://discord.gg/8H2Sfdh",
+        "icon": "mdi-discord"
     }
 ]
