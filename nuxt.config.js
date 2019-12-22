@@ -15,6 +15,11 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  env: {
+    email: process.env.BITCART_EMAIL || 'test@example.com',
+    password: process.env.BITCART_PASSWORD || 'test1234',
+    product: process.env.BITCART_PRODUCT || 1
+  },
   /*
   ** Customize the progress-bar color
   */
