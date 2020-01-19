@@ -84,6 +84,11 @@ export default {
         {
           text: 'Community',
           to: '/#community'
+        },
+        {
+          text: 'Easy Launch',
+          to: 'https://launch.bitcartcc.com',
+          external: true
         }
       ],
       title: 'BitcartCC'

@@ -79,8 +79,8 @@ export default {
         this.$axios.defaults.headers.authorization = `Bearer ${token}`
         this.$axios.get('https://demo.bitcartcc.com/rate').then((r) => {
           this.amount = parseFloat(5 / r.data).toFixed(8) // 5$
-          this.$axios.post('https://demo.bitcartcc.com/invoices', { products: [process.env.product], amount: this.amount }).then((res) => {
-            window.open(`https://admin.bitcartcc.com/i/${res.data.id}`, '_blank')
+          this.$axios.post('https://demo.bitcartcc.com/invoices', { store_id: parseInt(process.env.store), amount: this.amount }).then((res) => {
+            window.location = `https://admin.bitcartcc.com/i/${res.data.id}`
           })
         })
       })
