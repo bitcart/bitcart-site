@@ -77,11 +77,9 @@ export default {
       this.$axios.post('https://demo.bitcartcc.com/token', { 'email': process.env.email, 'password': process.env.password }).then((resp) => {
         const token = resp.data.access_token // JWT auth
         this.$axios.defaults.headers.authorization = `Bearer ${token}`
-        this.$axios.get('https://demo.bitcartcc.com/rate').then((r) => {
-          this.amount = parseFloat(5 / r.data).toFixed(8) // 5$
-          this.$axios.post('https://demo.bitcartcc.com/invoices', { store_id: parseInt(process.env.store), amount: this.amount }).then((res) => {
-            window.location = `https://admin.bitcartcc.com/i/${res.data.id}`
-          })
+        this.price = 5 // 5$
+        this.$axios.post('https://demo.bitcartcc.com/invoices', { store_id: parseInt(process.env.store), price: this.price }).then((res) => {
+          window.location = `https://admin.bitcartcc.com/i/${res.data.id}`
         })
       })
     }
