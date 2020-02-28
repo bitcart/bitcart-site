@@ -21,7 +21,7 @@
           <v-btn class="success" href="https://admin.bitcartcc.com" target="blank_">
             LIVE DEMO
           </v-btn>
-          <v-btn class="success" @click.stop="showDonation">
+          <v-btn @click.stop="showDonation" class="success">
             &nbsp;DONATE&nbsp;
             <v-icon>
               mdi-chevron-right-circle

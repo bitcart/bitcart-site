@@ -17,8 +17,8 @@
 
       <v-card-actions class="justify-center">
         <v-btn
-          icon
           @click="showInfo = !showInfo"
+          icon
         >
           <v-icon>{{ showInfo ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
         </v-btn>

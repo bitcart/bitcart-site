@@ -13,5 +13,10 @@
         "name": "Discord",
         "url": "https://discord.gg/8H2Sfdh",
         "icon": "mdi-discord"
+    },
+    {
+        "name": "Reddit",
+        "url": "https://www.reddit.com/r/BitcartCC",
+        "icon": "mdi-reddit"
     }
 ]
