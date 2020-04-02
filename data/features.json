@@ -2,7 +2,7 @@
     {
         "text": "Receive or perform cryptocurrency payments as a business or an individual. No fees. No third-party.",
         "moreText": "Bitcart is using electrum wallet you know and love. Your private key never leaves your PC.",
-        "icon": "mdi-bitcoin",
+        "icon": "mdi-currency-btc",
         "links": [
             {
                 "text": "Try out the live demo",
@@ -79,7 +79,7 @@
     {
         "text": "Supporting multiple coins, APIs remain the same",
         "moreText": "A variety of different coins is available, and you can use any of them in the same way.\nEnabling new coin in docker installation is a matter of one command.",
-        "icon": "mdi-coins"
+        "icon": "mdi-circle-multiple-outline"
     },
     {
         "text": "Powerful SDK libraries to create apps of any kind",
