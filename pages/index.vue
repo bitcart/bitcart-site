@@ -74,14 +74,17 @@ export default {
   methods: {
     showDonation () {
       // process.env is got from env section in nuxt.config.js
-      this.$axios.post('https://demo.bitcartcc.com/token', { 'email': process.env.email, 'password': process.env.password }).then((resp) => {
-        const token = resp.data.access_token // JWT auth
-        this.$axios.defaults.headers.authorization = `Bearer ${token}`
-        this.price = 5 // 5$
-        this.$axios.post('https://demo.bitcartcc.com/invoices', { store_id: parseInt(process.env.store), price: this.price }).then((res) => {
-          window.location = `https://admin.bitcartcc.com/i/${res.data.id}`
-        })
+      this.price = 5 // 5$
+      this.$axios.post('https://demo.bitcartcc.com/invoices', { store_id: parseInt(process.env.store), price: this.price }).then((res) => {
+        window.bitcart.showInvoice(res.data.id)
       })
+    }
+  },
+  head () {
+    return {
+      script: [
+        { src: 'https://admin.bitcartcc.com/modal/bitcart.js' } // include modal script from BitcartCC Admin instance
+      ]
     }
   }
 }

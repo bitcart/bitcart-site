@@ -16,8 +16,6 @@ export default {
     ]
   },
   env: {
-    email: process.env.BITCART_EMAIL || 'test@example.com',
-    password: process.env.BITCART_PASSWORD || 'test1234',
     store: process.env.BITCART_STORE || 1
   },
   /*
