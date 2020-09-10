@@ -78,7 +78,7 @@ export default {
         },
         {
           text: 'Github',
-          to: 'https://github.com/MrNaif2018/bitcart',
+          to: 'https://github.com/bitcartcc/bitcart',
           external: true
         },
         {

@@ -46,7 +46,7 @@
         "links": [
             {
                 "text": "Github",
-                "url": "https://github.com/MrNaif2018/bitcart"
+                "url": "https://github.com/bitcartcc/bitcart"
             }
         ]
     },
@@ -92,11 +92,11 @@
             },
             {
                 "text": "Atomic Tipbot",
-                "url": "https://github.com/MrNaif2018/bitcart-sdk/tree/master/examples/atomic_tipbot"
+                "url": "https://github.com/bitcartcc/bitcart-sdk/tree/master/examples/atomic_tipbot"
             },
             {
                 "text": "Examples of usage",
-                "url": "https://github.com/MrNaif2018/bitcart-sdk/tree/master/examples"
+                "url": "https://github.com/bitcartcc/bitcart-sdk/tree/master/examples"
             }
         ]
     },
