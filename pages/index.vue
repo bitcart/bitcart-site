@@ -75,7 +75,7 @@ export default {
     showDonation () {
       // process.env is got from env section in nuxt.config.js
       this.price = 5 // 5$
-      this.$axios.post('https://demo.bitcartcc.com/invoices', { store_id: parseInt(process.env.store), price: this.price }).then((res) => {
+      this.$axios.post('https://api.bitcartcc.com/invoices', { store_id: parseInt(process.env.store), price: this.price }).then((res) => {
         window.bitcart.showInvoice(res.data.id)
       })
     }
