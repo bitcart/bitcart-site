@@ -77,6 +77,11 @@ export default {
           external: true
         },
         {
+          text: 'Blog',
+          to: 'https://blog.bitcartcc.com',
+          external: true
+        },
+        {
           text: 'Github',
           to: 'https://github.com/bitcartcc/bitcart',
           external: true
