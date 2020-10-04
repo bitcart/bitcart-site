@@ -19,15 +19,29 @@
 
       <v-card-actions v-if="item.links">
         <v-col class="text-center">
-          <v-btn
-            v-for="link in item.links"
-            :key="link.url"
-            :href="link.url"
-            target="_blank"
-            class="success mr-2 mb-2"
-          >
-            {{ link.text }}
-          </v-btn>
+          <v-tooltip v-for="link in item.links" :key="link.url" bottom>
+            <template #activator="{ on, attrs }">
+              <v-btn
+                :href="link.url"
+                target="_blank"
+                class="success mr-2 mb-2"
+                v-bind="attrs"
+                v-on="on"
+              >
+                <span
+                  class="d-inline-block text-truncate"
+                  :style="
+                    $vuetify.breakpoint.xsOnly ? { 'max-width': '150px' } : {}
+                  "
+                >
+                  {{ link.text }}
+                </span>
+              </v-btn>
+            </template>
+            <span>
+              {{ link.text }}
+            </span>
+          </v-tooltip>
         </v-col>
       </v-card-actions>
     </v-card>

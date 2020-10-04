@@ -3,7 +3,15 @@
     <v-row>
       <v-col>
         <hgroup class="mb-5">
-          <h1 class="green--text">BitcartCC</h1>
+          <p
+            class="pb-4 font-weight-bold green--text"
+            :class="{
+              'display-4': $vuetify.breakpoint.mdAndUp,
+              'display-2': $vuetify.breakpoint.smAndDown,
+            }"
+          >
+            BitcartCC
+          </p>
           <h2>
             Start Accepting Crypto Payments With 0% Fees &amp; No Third-party
           </h2>
@@ -62,7 +70,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="mb-5">
+    <v-row id="features" class="mb-5">
       <v-col cols="12" class="pb-0">
         <h2>Features</h2>
       </v-col>
