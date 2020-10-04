@@ -12,7 +12,7 @@
     </v-row>
     <v-row class="mb-5">
       <v-col cols="12" md="6">
-        <h2>What is BitcartCC</h2>
+        <h2 class="green--text text--darken-2">What is BitcartCC</h2>
         <p>
           BitcartCC is a self-hosted, open-source cryptocurrency all-in-one
           solution. It's secure, private, censorship-resistant and free.
@@ -37,7 +37,7 @@
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <h2>Join the community</h2>
+        <h2 class="green--text text--darken-2">Join the community</h2>
         <p>
           BitcartCC is an open-source project, not a company. We rely on a
           network of diverse contributors and users to provide support for

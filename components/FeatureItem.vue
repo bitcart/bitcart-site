@@ -7,11 +7,11 @@
         </v-icon>
       </v-card-title>
       <v-card-text>
-        <v-row>
-          <v-col cols="12" md="6">
+        <v-row class="text--primary" style="font-size: 16px">
+          <v-col cols="12">
             {{ item.text }}
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12">
             {{ item.moreText }}
           </v-col>
         </v-row>
@@ -23,7 +23,6 @@
             v-for="link in item.links"
             :key="link.url"
             :href="link.url"
-            small
             target="_blank"
             class="success mr-2 mb-2"
           >
@@ -46,11 +45,6 @@ export default {
     return {
       showInfo: false,
     }
-  },
-  computed: {
-    hackNoToggleButtons() {
-      return null
-    },
   },
 }
 </script>
