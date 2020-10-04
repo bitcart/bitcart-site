@@ -4,40 +4,38 @@
       <h1>
         {{ title }}
       </h1>
-      <NuxtLink to="/">
-        Home page
-      </NuxtLink>
+      <NuxtLink to="/"> Home page </NuxtLink>
     </div>
   </v-layout>
 </template>
 
 <script>
 export default {
-  layout: 'empty',
+  layout: "empty",
   props: {
     error: {
       type: Object,
-      default: null
+      default: null,
+    },
+  },
+  data() {
+    return {
+      pageNotFound: "404 Not Found",
+      otherError: "An error occurred",
     }
   },
-  head () {
+  head() {
     const title =
       this.error.statusCode === 404 ? this.pageNotFound : this.otherError
     return {
-      title
-    }
-  },
-  data () {
-    return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred'
+      title,
     }
   },
   computed: {
-    title () {
+    title() {
       return this.error.statusCode === 404 ? this.pageNotFound : this.otherError
-    }
-  }
+    },
+  },
 }
 </script>
 

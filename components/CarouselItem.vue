@@ -1,9 +1,6 @@
 <template>
   <v-carousel-item>
-    <v-card
-      class="mx-auto"
-      max-width="300"
-    >
+    <v-card class="mx-auto" max-width="300">
       <v-card-title class="justify-center">
         <v-icon size="30px" color="green" class="feature-icon">
           {{ item.icon }}
@@ -16,11 +13,10 @@
       </v-card-text>
 
       <v-card-actions class="justify-center">
-        <v-btn
-          @click="showInfo = !showInfo"
-          icon
-        >
-          <v-icon>{{ showInfo ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        <v-btn icon @click="showInfo = !showInfo">
+          <v-icon>
+            {{ showInfo ? "mdi-chevron-up" : "mdi-chevron-down" }}
+          </v-icon>
         </v-btn>
       </v-card-actions>
 
@@ -33,16 +29,8 @@
           </v-card-text>
           <v-card-actions v-if="item.links">
             <v-col>
-              <div
-                v-for="link in item.links"
-                :key="link.url"
-                class="my-2"
-              >
-                <v-btn
-                  :href="link.url"
-                  target="_blank"
-                  class="success"
-                >
+              <div v-for="link in item.links" :key="link.url" class="my-2">
+                <v-btn :href="link.url" target="_blank" class="success">
                   {{ link.text }}
                 </v-btn>
               </div>
@@ -58,13 +46,13 @@ export default {
   props: {
     item: {
       type: Object,
-      required: true
+      required: true,
+    },
+  },
+  data() {
+    return {
+      showInfo: false,
     }
   },
-  data () {
-    return {
-      showInfo: false
-    }
-  }
 }
 </script>
