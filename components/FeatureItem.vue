@@ -1,0 +1,56 @@
+<template>
+  <div class="p-4 col-12 col-md-6 col-lg-4 col-xl-3">
+    <v-card flat outlined height="100%">
+      <v-card-title class="justify-center pt-4">
+        <v-icon size="75px" color="green" class="feature-icon">
+          {{ item.icon }}
+        </v-icon>
+      </v-card-title>
+      <v-card-text>
+        <v-row>
+          <v-col cols="12" md="6">
+            {{ item.text }}
+          </v-col>
+          <v-col cols="12" md="6">
+            {{ item.moreText }}
+          </v-col>
+        </v-row>
+      </v-card-text>
+
+      <v-card-actions v-if="item.links">
+        <v-col class="text-center">
+          <v-btn
+            v-for="link in item.links"
+            :key="link.url"
+            :href="link.url"
+            small
+            target="_blank"
+            class="success mr-2 mb-2"
+          >
+            {{ link.text }}
+          </v-btn>
+        </v-col>
+      </v-card-actions>
+    </v-card>
+  </div>
+</template>
+<script>
+export default {
+  props: {
+    item: {
+      type: Object,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      showInfo: false,
+    }
+  },
+  computed: {
+    hackNoToggleButtons() {
+      return null
+    },
+  },
+}
+</script>

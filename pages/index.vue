@@ -1,24 +1,21 @@
 <template>
   <v-container>
-    <v-row id="features">
+    <v-row class="mb-5">
       <v-col>
-        <h1 class="green--text text--darken-2">
-          Start Accepting Crypto Payments With 0% Fees &amp; No Third-party
-        </h1>
+        <hgroup class="mb-5">
+          <h1 class="green--text">BitcartCC</h1>
+          <h3>
+            Start Accepting Crypto Payments With 0% Fees &amp; No Third-party
+          </h3>
+        </hgroup>
         <p>
           BitcartCC is a self-hosted, open-source cryptocurrency all-in-one
           solution. It's secure, private, censorship-resistant and free.
-          <br />
-          <span>
-            <v-icon @click.stop="showDetails = !showDetails">
-              mdi-information
-            </v-icon>
-          </span>
-          <span v-if="showDetails">
-            <br />Receive your bitcoin and altcoin payments without any fees or
-            third-party involvement. You are your own bank. Funds go directly to
-            your wallet; your private key is never required.
-          </span>
+        </p>
+        <p>
+          Receive your bitcoin and altcoin payments without any fees or
+          third-party involvement. You are your own bank. Funds go directly to
+          your wallet; your private key is never required.
         </p>
         <div>
           <v-btn
@@ -26,31 +23,31 @@
             href="https://admin.bitcartcc.com"
             target="blank_"
           >
-            LIVE DEMO
+            Live Demo
           </v-btn>
           <v-btn class="success" @click.stop="showDonation">
-            &nbsp;DONATE&nbsp;
+            &nbsp;Donate&nbsp;
             <v-icon> mdi-chevron-right-circle </v-icon>
           </v-btn>
         </div>
       </v-col>
     </v-row>
-    <v-row>
-      <v-carousel
-        :dark="$vuetify.theme.dark"
-        :light="!$vuetify.theme.dark"
-        :hide-delimiters="true"
-        :height="600"
-      >
-        <carousel-item
+
+    <v-row class="mb-5">
+      <v-col cols="12" class="pb-0">
+        <h2>Features</h2>
+      </v-col>
+      <v-col class="d-flex flex-row flex-wrap pl-0 pr-0 pt-0">
+        <FeatureItem
           v-for="feature in $options.features"
           :key="feature.text"
           :item="feature"
         />
-      </v-carousel>
+      </v-col>
     </v-row>
+
     <v-row id="community">
-      <h1 class="green--text text--darken-2">JOIN THE COMMUNITY</h1>
+      <h2>Join the community</h2>
     </v-row>
     <v-row>
       <p>
@@ -73,19 +70,17 @@
 </template>
 
 <script>
-import CarouselItem from "@/components/CarouselItem.vue"
+import FeatureItem from "@/components/FeatureItem.vue"
 import features from "@/data/features.json"
 import communities from "@/data/communities.json"
 export default {
   features,
   communities,
   components: {
-    CarouselItem,
+    FeatureItem,
   },
   data() {
-    return {
-      showDetails: false,
-    }
+    return {}
   },
   head() {
     return {
@@ -110,9 +105,8 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.feature-icon {
-  transform: translateY(-15px) !important;
+<style lang="scss">
+h1 {
+  font-size: 6rem;
 }
 </style>
