@@ -6,42 +6,58 @@
           Start Accepting Crypto Payments With 0% Fees &amp; No Third-party
         </h1>
         <p>
-          BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free.
-          <br>
+          BitcartCC is a self-hosted, open-source cryptocurrency all-in-one
+          solution. It's secure, private, censorship-resistant and free.
+          <br />
           <span>
             <v-icon @click.stop="showDetails = !showDetails">
               mdi-information
             </v-icon>
           </span>
           <span v-if="showDetails">
-            <br>Receive your bitcoin and altcoin payments without any fees or third-party involvement. You are your own bank. Funds go directly to your wallet; your private key is never required.
+            <br />Receive your bitcoin and altcoin payments without any fees or
+            third-party involvement. You are your own bank. Funds go directly to
+            your wallet; your private key is never required.
           </span>
         </p>
         <div>
-          <v-btn class="success" href="https://admin.bitcartcc.com" target="blank_">
+          <v-btn
+            class="success"
+            href="https://admin.bitcartcc.com"
+            target="blank_"
+          >
             LIVE DEMO
           </v-btn>
-          <v-btn @click.stop="showDonation" class="success">
+          <v-btn class="success" @click.stop="showDonation">
             &nbsp;DONATE&nbsp;
-            <v-icon>
-              mdi-chevron-right-circle
-            </v-icon>
+            <v-icon> mdi-chevron-right-circle </v-icon>
           </v-btn>
         </div>
       </v-col>
     </v-row>
     <v-row>
-      <v-carousel :dark="$vuetify.theme.dark" :light="!$vuetify.theme.dark" :hide-delimiters="true" :height="600">
-        <carousel-item v-for="feature in $options.features" :key="feature.text" :item="feature" />
+      <v-carousel
+        :dark="$vuetify.theme.dark"
+        :light="!$vuetify.theme.dark"
+        :hide-delimiters="true"
+        :height="600"
+      >
+        <carousel-item
+          v-for="feature in $options.features"
+          :key="feature.text"
+          :item="feature"
+        />
       </v-carousel>
     </v-row>
     <v-row id="community">
-      <h1 class="green--text text--darken-2">
-        JOIN THE COMMUNITY
-      </h1>
+      <h1 class="green--text text--darken-2">JOIN THE COMMUNITY</h1>
     </v-row>
     <v-row>
-      <p>BitcartCC is an open-source project, not a company. We rely on a network of diverse contributors and users to provide support for numerous use-cases. Join us in improving, learning, and building BitcartCC.</p>
+      <p>
+        BitcartCC is an open-source project, not a company. We rely on a network
+        of diverse contributors and users to provide support for numerous
+        use-cases. Join us in improving, learning, and building BitcartCC.
+      </p>
     </v-row>
     <v-row>
       <v-col v-for="community in $options.communities" :key="community.name">
@@ -57,36 +73,41 @@
 </template>
 
 <script>
-import CarouselItem from '@/components/CarouselItem.vue'
-import features from '@/data/features.json'
-import communities from '@/data/communities.json'
+import CarouselItem from "@/components/CarouselItem.vue"
+import features from "@/data/features.json"
+import communities from "@/data/communities.json"
 export default {
   features,
   communities,
   components: {
-    CarouselItem
+    CarouselItem,
   },
-  data () {
+  data() {
     return {
-      showDetails: false
+      showDetails: false,
+    }
+  },
+  head() {
+    return {
+      script: [
+        { src: "https://admin.bitcartcc.com/modal/bitcart.js" }, // include modal script from BitcartCC Admin instance
+      ],
     }
   },
   methods: {
-    showDonation () {
+    showDonation() {
       // process.env is got from env section in nuxt.config.js
       this.price = 5 // 5$
-      this.$axios.post('https://api.bitcartcc.com/invoices', { store_id: parseInt(process.env.store), price: this.price }).then((res) => {
-        window.bitcart.showInvoice(res.data.id)
-      })
-    }
+      this.$axios
+        .post("https://api.bitcartcc.com/invoices", {
+          store_id: parseInt(process.env.store),
+          price: this.price,
+        })
+        .then((res) => {
+          window.bitcart.showInvoice(res.data.id)
+        })
+    },
   },
-  head () {
-    return {
-      script: [
-        { src: 'https://admin.bitcartcc.com/modal/bitcart.js' } // include modal script from BitcartCC Admin instance
-      ]
-    }
-  }
 }
 </script>
 
