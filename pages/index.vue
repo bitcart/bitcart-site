@@ -1,13 +1,18 @@
 <template>
   <v-container>
-    <v-row class="mb-5">
+    <v-row>
       <v-col>
         <hgroup class="mb-5">
           <h1 class="green--text">BitcartCC</h1>
-          <h3>
+          <h2>
             Start Accepting Crypto Payments With 0% Fees &amp; No Third-party
-          </h3>
+          </h2>
         </hgroup>
+      </v-col>
+    </v-row>
+    <v-row class="mb-5">
+      <v-col cols="12" md="6">
+        <h2>What is BitcartCC</h2>
         <p>
           BitcartCC is a self-hosted, open-source cryptocurrency all-in-one
           solution. It's secure, private, censorship-resistant and free.
@@ -31,6 +36,30 @@
           </v-btn>
         </div>
       </v-col>
+      <v-col cols="12" md="6">
+        <h2>Join the community</h2>
+        <p>
+          BitcartCC is an open-source project, not a company. We rely on a
+          network of diverse contributors and users to provide support for
+          numerous use-cases. Join us in improving, learning, and building
+          BitcartCC.
+        </p>
+        <div class="d-flex flex-row flex-wrap justify-space-between">
+          <v-btn
+            v-for="community in $options.communities"
+            :key="community.name"
+            :href="community.url"
+            xl
+            target="_blank"
+            class="mb-2"
+          >
+            <v-icon size="30px">
+              {{ community.icon }}
+            </v-icon>
+            {{ community.name }}
+          </v-btn>
+        </div>
+      </v-col>
     </v-row>
 
     <v-row class="mb-5">
@@ -43,27 +72,6 @@
           :key="feature.text"
           :item="feature"
         />
-      </v-col>
-    </v-row>
-
-    <v-row id="community">
-      <h2>Join the community</h2>
-    </v-row>
-    <v-row>
-      <p>
-        BitcartCC is an open-source project, not a company. We rely on a network
-        of diverse contributors and users to provide support for numerous
-        use-cases. Join us in improving, learning, and building BitcartCC.
-      </p>
-    </v-row>
-    <v-row>
-      <v-col v-for="community in $options.communities" :key="community.name">
-        <v-btn :href="community.url" target="_blank">
-          <v-icon size="30px">
-            {{ community.icon }}
-          </v-icon>
-          <h3>{{ community.name }}</h3>
-        </v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -108,5 +116,14 @@ export default {
 <style lang="scss">
 h1 {
   font-size: 6rem;
+}
+h2 {
+  margin-bottom: 8px;
+}
+
+hgroup {
+  h2 {
+    margin-top: -30px;
+  }
 }
 </style>
