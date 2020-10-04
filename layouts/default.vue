@@ -48,7 +48,7 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer fixed app>
+    <v-footer fixed app class="justify-center">
       <span>&copy; BitcartCC 2018-2020</span>
     </v-footer>
   </v-app>
