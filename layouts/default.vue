@@ -43,12 +43,12 @@
         <v-icon @click.stop="changeTheme"> mdi-moon-waning-crescent </v-icon>
       </v-toolbar-items>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
-    <v-footer fixed app>
+    </v-main>
+    <v-footer fixed app class="justify-center">
       <span>&copy; BitcartCC 2018-2020</span>
     </v-footer>
   </v-app>
