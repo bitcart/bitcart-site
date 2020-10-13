@@ -23,16 +23,16 @@
             <template #activator="{ on, attrs }">
               <v-btn
                 :href="link.url"
-                target="_blank"
-                class="success mr-2 mb-2"
                 v-bind="attrs"
                 v-on="on"
+                target="_blank"
+                class="success mr-2 mb-2"
               >
                 <span
-                  class="d-inline-block text-truncate"
                   :style="
                     $vuetify.breakpoint.xsOnly ? { 'max-width': '150px' } : {}
                   "
+                  class="d-inline-block text-truncate"
                 >
                   {{ link.text }}
                 </span>

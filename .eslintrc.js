@@ -9,12 +9,12 @@ module.exports = {
   },
   extends: [
     "@nuxtjs",
-    "eslint:recommended",
-    "plugin:vue/recommended",
-    "plugin:prettier/recommended",
     "plugin:nuxt/recommended",
+    "prettier",
+    "prettier/vue",
+    "plugin:prettier/recommended",
   ],
-  plugins: ["vue"],
+  plugins: ["prettier"],
   // add your custom rules here
   rules: {
     semi: [2, "never"],

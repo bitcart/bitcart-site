@@ -4,11 +4,11 @@
       <v-col>
         <hgroup class="mb-5">
           <p
-            class="pb-4 font-weight-bold green--text"
             :class="{
               'display-4': $vuetify.breakpoint.mdAndUp,
               'display-2': $vuetify.breakpoint.smAndDown,
             }"
+            class="pb-4 font-weight-bold green--text"
           >
             BitcartCC
           </p>
@@ -38,7 +38,7 @@
           >
             Live Demo
           </v-btn>
-          <v-btn class="success" @click.stop="showDonation">
+          <v-btn @click.stop="showDonation" class="success">
             &nbsp;Donate&nbsp;
             <v-icon> mdi-chevron-right-circle </v-icon>
           </v-btn>
