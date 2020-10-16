@@ -26,7 +26,13 @@
         v-if="!$vuetify.breakpoint.smAndUp"
         @click.stop="drawer = !drawer"
       />
-      <v-img max-height="60" max-width="60" contain src="/icon.png" />
+      <v-img
+        max-height="60"
+        max-width="60"
+        contain
+        src="/icon.svg"
+        class="mr-2"
+      />
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <v-toolbar-items v-if="$vuetify.breakpoint.smAndUp">
