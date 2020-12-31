@@ -55,7 +55,7 @@
       </v-container>
     </v-main>
     <v-footer fixed app class="justify-center">
-      <span>&copy; BitcartCC 2018-2020</span>
+      <span>&copy; BitcartCC 2018-{{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
