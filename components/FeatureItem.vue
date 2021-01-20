@@ -24,9 +24,9 @@
               <v-btn
                 :href="link.url"
                 v-bind="attrs"
-                v-on="on"
                 target="_blank"
                 class="success mr-2 mb-2"
+                v-on="on"
               >
                 <span
                   :style="
