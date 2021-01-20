@@ -38,7 +38,7 @@
           >
             Live Demo
           </v-btn>
-          <v-btn @click.stop="showDonation" class="success">
+          <v-btn class="success" @click.stop="showDonation">
             &nbsp;Donate&nbsp;
             <v-icon> mdi-chevron-right-circle </v-icon>
           </v-btn>
