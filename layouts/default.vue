@@ -91,7 +91,7 @@ export default {
         },
         {
           text: "Easy Launch",
-          to: "https://launch.bitcartcc.com",
+          to: "https://configurator.bitcartcc.com",
           external: true,
         },
       ],

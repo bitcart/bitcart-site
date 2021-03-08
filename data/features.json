@@ -1,7 +1,7 @@
 [
     {
         "text": "Receive or perform cryptocurrency payments as a business or an individual. No fees. No third-party.",
-        "moreText": "Bitcart is using electrum wallet you know and love. Your private key never leaves your PC.",
+        "moreText": "BitcartCC is using electrum wallet you know and love. Your private key never leaves your PC.",
         "icon": "mdi-currency-btc",
         "links": [
             {
@@ -12,36 +12,36 @@
     },
     {
         "text": "Fast, easy to use and secure",
-        "moreText": "Bitcart is written to be fast and light, working on any kind of servers, or at your home PC",
+        "moreText": "BitcartCC is written to be fast and light, working on any kind of servers, or at your home PC",
         "icon": "mdi-speedometer"
     },
     {
-        "text": "Your private keys are never required to use Bitcart",
+        "text": "Your private keys are never required to use BitcartCC",
         "moreText": "Your keys - your bitcoin!\nYou can use your public key, or just a set of addresses to watch for",
         "icon": "mdi-key"
     },
     {
         "text": "Ready to use admin panel and store for your business",
-        "moreText": "Bitcart provides optional, but easy to install and use admin panel for full management of your products and checkout and ready store\nJust fill in your products in admin panel and start getting your first customers!",
+        "moreText": "BitcartCC provides optional, but easy to install and use admin panel for full management of your products and checkout and ready store.\nJust fill in your products in admin panel and start getting your first customers!",
         "icon": "mdi-store",
         "links": [
             {
-                "text": "Bitcart admin demo",
+                "text": "BitcartCC admin demo",
                 "url": "https://admin.bitcartcc.com"
             },
             {
-                "text": "Bitcart store demo",
+                "text": "BitcartCC store demo",
                 "url": "https://store.bitcartcc.com"
             },
             {
-                "text": "Bitcart Merchant API demo",
+                "text": "BitcartCC Merchant API demo",
                 "url": "https://api.bitcartcc.com"
             }
         ]
     },
     {
         "text": "Free and fully-open source software. Self-hosted and non-custodial.",
-        "moreText": "Licensed under MIT license, you're free to improve and view source code of bitcart.\nYour are your own bank, as you host bitcart yourself.",
+        "moreText": "You're free to improve and view source code of BitcartCC.\nYour are your own bank, as you host BitcartCC yourself.",
         "icon": "mdi-open-source-initiative",
         "links": [
             {
@@ -58,21 +58,25 @@
             {
                 "text": "What is Lightning Network?",
                 "url": "https://lightning.network/"
+            },
+            {
+                "text": "Lightning network Guide",
+                "url": "https://docs.bitcartcc.com/guides/lightning"
             }
         ]
     },
     {
-        "text": "Easy to deploy on any kind of server, via GUI or in a few CLI commands",
-        "moreText": "There is even an telegram bot which can install bitcart on your server.\n It is possible to install bitcart right from your phone! Or just use easy to configure and use docker installation!",
+        "text": "Easy to deploy on any kind of server, via GUI or a few CLI commands",
+        "moreText": "It is possible to install BitcartCC right from your phone, without any technical skills! Or just use easy to configure and use docker installation!",
         "icon": "mdi-server",
         "links": [
             {
-                "text": "Digitalocean setup guide",
-                "url": "https://docs.bitcartcc.com/en/latest/tutorials/digitalocean-setup/tutorial.html"
+                "text": "BitcartCC Configurator",
+                "url": "https://configurator.bitcartcc.com"
             },
             {
-                "text": "Bitcart installer bot",
-                "url": "https://t.me/bitcartinstallerbot"
+                "text": "Deployment guides",
+                "url": "https://docs.bitcartcc.com/deployment/deployment"
             }
         ]
     },
@@ -83,7 +87,7 @@
     },
     {
         "text": "Powerful SDK libraries to create apps of any kind",
-        "moreText": "Powerful python SDK is available.\nOr just connect to bitcart daemon from any programming language\nYou can even create a blockchain explorer, atomic swaps bot, or a wallet with it!",
+        "moreText": "Powerful python SDK is available.\nOr just connect to BitcartCC daemon from any programming language\nYou can even create a blockchain explorer, atomic swaps bot, or a wallet with it!",
         "icon": "mdi-dev-to",
         "links": [
             {
@@ -102,12 +106,16 @@
     },
     {
         "text": "Modular and extensible",
-        "moreText": "Bitcart is composed of different independent components, you can pick only the ones you need",
+        "moreText": "BitcartCC is composed of different independent components, you can pick only the ones you need",
         "icon": "mdi-puzzle",
         "links": [
             {
-                "text": "Bitcart components diagram",
-                "url": "https://t.me/bitcartcc/236"
+                "text": "BitcartCC components diagram",
+                "url": "https://raw.githubusercontent.com/bitcartcc/bitcart-docs/master/.gitbook/assets/bitcartcc_structure.png"
+            },
+            {
+                "text": "Architecture",
+                "url": "https://docs.bitcartcc.com/development/architecture"
             }
         ]
     }
