@@ -31,6 +31,7 @@
         max-width="60"
         contain
         src="/icon.svg"
+        :style="logoStyle"
         class="mr-2"
       />
       <v-toolbar-title v-text="title" />
@@ -97,6 +98,11 @@ export default {
       ],
       title: "BitcartCC",
     }
+  },
+  computed: {
+    logoStyle() {
+      return this.$vuetify.theme.dark ? "filter: invert(1)" : ""
+    },
   },
   created() {
     const hours = new Date().getHours()
