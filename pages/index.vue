@@ -26,9 +26,9 @@
           solution. It's secure, private, censorship-resistant and free.
         </p>
         <p>
-          Receive your bitcoin and altcoin payments without any fees or
-          third-party involvement. You are your own bank. Funds go directly to
-          your wallet; your private key is never required.
+          Receive cryptocurrency payments without any fees or third-party
+          involvement. You are your own bank. Funds go directly to your wallet;
+          your private key is never required.
         </p>
         <div>
           <v-btn

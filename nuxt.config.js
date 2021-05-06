@@ -1,6 +1,6 @@
 export default {
   telemetry: false,
-  mode: "spa",
+  ssr: false,
   /*
    ** Headers of the page
    */
