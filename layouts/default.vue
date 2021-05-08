@@ -95,6 +95,11 @@ export default {
           to: "https://configurator.bitcartcc.com",
           external: true,
         },
+        {
+          text: "Roadmap",
+          to: "https://github.com/orgs/bitcartcc/projects/1",
+          external: true,
+        },
       ],
       title: "BitcartCC",
     }
