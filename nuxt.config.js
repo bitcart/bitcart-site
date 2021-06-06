@@ -19,7 +19,7 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
   env: {
-    store: process.env.BITCART_STORE || 1,
+    store: process.env.BITCART_STORE || "1",
   },
   /*
    ** Customize the progress-bar color

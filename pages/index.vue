@@ -111,7 +111,7 @@ export default {
       this.price = 5 // 5$
       this.$axios
         .post("https://api.bitcartcc.com/invoices", {
-          store_id: parseInt(process.env.store),
+          store_id: process.env.store,
           price: this.price,
         })
         .then((res) => {
