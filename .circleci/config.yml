@@ -1,28 +1,31 @@
-version: 2.1
-orbs:
-  node: circleci/node@3.0.0
-
-commands:
-  setup-node-and-yarn-install-with-cache:
-    steps:
-      - node/install:
-          install-yarn: true
-          node-version: latest
-      - node/install-packages:
-          pkg-manager: yarn
+version: 2
 
 jobs:
-  lint-and-test:
-    executor:
-      name: node/default
+  test:
+    docker:
+      - image: circleci/node:14
+
+    working_directory: ~/repo
+
     steps:
       - checkout
-      - setup-node-and-yarn-install-with-cache
-      - run:
-          name: Lint
-          command: yarn lint
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}-{{ .Branch }}
+            - v1-dependencies-
+
+      - run: yarn install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}-{{ .Branch }}
+
+      - run: yarn lint
 
 workflows:
-  node-tests:
+  version: 2
+  test:
     jobs:
-      - lint-and-test
+      - test
