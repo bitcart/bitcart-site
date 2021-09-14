@@ -58,7 +58,7 @@ export default {
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
    */
-  vuetify: {},
+  vuetify: { optionsPath: "~/vuetify.options.js" },
   /*
    ** Build configuration
    */
