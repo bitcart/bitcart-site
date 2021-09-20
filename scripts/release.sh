@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-pip install transifex-client
+pip3 install transifex-client
 tx pull --parallel -asf
 yarn build
