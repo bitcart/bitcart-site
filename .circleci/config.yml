@@ -24,8 +24,27 @@ jobs:
 
       - run: yarn lint
 
+  publish:
+    docker:
+      - image: cimg/python:3.7
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - run:
+          name: publish locale source
+          command: |
+            pip install transifex-client
+            tx push -s
+
 workflows:
   version: 2
   test:
     jobs:
       - test
+      - publish:
+          requires:
+            - test
+          context: global
