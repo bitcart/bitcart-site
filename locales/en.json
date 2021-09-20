@@ -1,3 +1,14 @@
 {
-  "start-accepting-crypto": "Start Accepting Crypto Payments With 0% Fees & No Third-party"
+  "home-page": "Home page",
+  "not-found": "404 Not Found",
+  "error-occurred": "An error occurred",
+  "start-accepting-crypto": "Start Accepting Crypto Payments With 0% Fees & No Third-party",
+  "what-is-bitcartcc": "What is BitcartCC",
+  "bitcartcc-opensource-free": "BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free.",
+  "receive-crypto": "Receive cryptocurrency payments without any fees or third-party involvement. You are your own bank. Funds go directly to your wallet; your private key is never required.",
+  "live-demo": "Live Demo",
+  "donate": "Donate",
+  "join-community": "Join the community",
+  "bitcartcc-not-a-company": "BitcartCC is an open-source project, not a company. We rely on a network of diverse contributors and users to provide support for numerous use-cases. Join us in improving, learning, and building BitcartCC.",
+  "features": "Features"
 }

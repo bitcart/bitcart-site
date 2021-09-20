@@ -20,15 +20,14 @@
     </v-row>
     <v-row class="mb-5">
       <v-col cols="12" md="6">
-        <h2 class="green--text text--darken-2">What is BitcartCC</h2>
+        <h2 class="green--text text--darken-2">
+          {{ $t("what-is-bitcartcc") }}
+        </h2>
         <p>
-          BitcartCC is a self-hosted, open-source cryptocurrency all-in-one
-          solution. It's secure, private, censorship-resistant and free.
+          {{ $t("bitcartcc-opensource-free") }}
         </p>
         <p>
-          Receive cryptocurrency payments without any fees or third-party
-          involvement. You are your own bank. Funds go directly to your wallet;
-          your private key is never required.
+          {{ $t("receive-crypto") }}
         </p>
         <div>
           <v-btn
@@ -36,21 +35,18 @@
             href="https://admin.bitcartcc.com"
             target="blank_"
           >
-            Live Demo
+            {{ $t("live-demo") }}
           </v-btn>
           <v-btn class="success" @click.stop="showDonation">
-            &nbsp;Donate&nbsp;
+            {{ $t("donate") }}
             <v-icon> mdi-chevron-right-circle </v-icon>
           </v-btn>
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <h2 class="green--text text--darken-2">Join the community</h2>
+        <h2 class="green--text text--darken-2">{{ $t("join-community") }}</h2>
         <p>
-          BitcartCC is an open-source project, not a company. We rely on a
-          network of diverse contributors and users to provide support for
-          numerous use-cases. Join us in improving, learning, and building
-          BitcartCC.
+          {{ $t("bitcartcc-not-a-company") }}
         </p>
         <div class="d-flex flex-row flex-wrap justify-space-between">
           <v-btn
@@ -72,7 +68,7 @@
 
     <v-row id="features" class="mb-5">
       <v-col cols="12" class="pb-0">
-        <h2>Features</h2>
+        <h2>{{ $t("features") }}</h2>
       </v-col>
       <v-col class="d-flex flex-row flex-wrap pl-0 pr-0 pt-0">
         <FeatureItem
