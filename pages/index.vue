@@ -13,7 +13,7 @@
             BitcartCC
           </p>
           <h2>
-            Start Accepting Crypto Payments With 0% Fees &amp; No Third-party
+            {{ $t("start-accepting-crypto") }}
           </h2>
         </hgroup>
       </v-col>

@@ -1,3 +1,5 @@
+import i18n from "./i18n.js"
+
 export default {
   telemetry: false,
   ssr: false,
@@ -46,6 +48,7 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    "@nuxtjs/i18n",
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
   ],
@@ -68,4 +71,5 @@ export default {
      */
     extend(config, ctx) {},
   },
+  i18n,
 }

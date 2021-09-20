@@ -47,8 +47,9 @@
         >
           {{ item.text }}
         </v-btn>
-        <v-icon @click.stop="changeTheme"> mdi-moon-waning-crescent </v-icon>
       </v-toolbar-items>
+      <language-menu />
+      <v-icon @click.stop="changeTheme"> mdi-moon-waning-crescent </v-icon>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -62,7 +63,11 @@
 </template>
 
 <script>
+import LanguageMenu from "@/components/LanguageMenu.vue"
 export default {
+  components: {
+    LanguageMenu,
+  },
   data() {
     return {
       drawer: false,
