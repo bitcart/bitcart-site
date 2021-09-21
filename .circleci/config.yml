@@ -45,6 +45,9 @@ workflows:
     jobs:
       - test
       - publish:
+          context: global
           requires:
             - test
-          context: global
+          filters:
+            branches:
+              only: master
