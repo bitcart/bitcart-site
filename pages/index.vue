@@ -50,7 +50,7 @@
         </p>
         <div class="d-flex flex-row flex-wrap justify-space-between">
           <v-btn
-            v-for="community in $options.communities"
+            v-for="community in communities"
             :key="community.name"
             :href="community.url"
             xl
@@ -72,7 +72,7 @@
       </v-col>
       <v-col class="d-flex flex-row flex-wrap pl-0 pr-0 pt-0">
         <FeatureItem
-          v-for="feature in $options.features"
+          v-for="feature in features"
           :key="feature.text"
           :item="feature"
         />
@@ -83,16 +83,11 @@
 
 <script>
 import FeatureItem from "@/components/FeatureItem.vue"
-import features from "@/data/features.json"
-import communities from "@/data/communities.json"
+import getFeatures from "@/data/features.js"
+import getCommunities from "@/data/communities.js"
 export default {
-  features,
-  communities,
   components: {
     FeatureItem,
-  },
-  data() {
-    return {}
   },
   head() {
     return {
@@ -100,6 +95,14 @@ export default {
         { src: "https://admin.bitcartcc.com/modal/bitcart.js" }, // include modal script from BitcartCC Admin instance
       ],
     }
+  },
+  computed: {
+    features() {
+      return getFeatures(this.$i18n)
+    },
+    communities() {
+      return getCommunities(this.$i18n)
+    },
   },
   methods: {
     showDonation() {

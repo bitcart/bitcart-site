@@ -73,35 +73,35 @@ export default {
       drawer: false,
       toolbarItems: [
         {
-          text: "Features",
+          text: this.$t("features"),
           to: "/#features",
         },
         {
-          text: "Docs",
+          text: this.$t("docs"),
           to: "https://docs.bitcartcc.com",
           external: true,
         },
         {
-          text: "Blog",
+          text: this.$t("blog"),
           to: "https://blog.bitcartcc.com",
           external: true,
         },
         {
-          text: "Github",
+          text: this.$t("github"),
           to: "https://github.com/bitcartcc/bitcart",
           external: true,
         },
         {
-          text: "Community",
+          text: this.$t("community"),
           to: "/#community",
         },
         {
-          text: "Easy Launch",
+          text: this.$t("easy-launch"),
           to: "https://configurator.bitcartcc.com",
           external: true,
         },
         {
-          text: "Roadmap",
+          text: this.$t("roadmap"),
           to: "https://github.com/orgs/bitcartcc/projects/1",
           external: true,
         },
