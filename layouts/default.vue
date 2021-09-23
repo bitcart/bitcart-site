@@ -71,7 +71,15 @@ export default {
   data() {
     return {
       drawer: false,
-      toolbarItems: [
+      title: "BitcartCC",
+    }
+  },
+  computed: {
+    logoStyle() {
+      return this.$vuetify.theme.dark ? "filter: invert(1)" : ""
+    },
+    toolbarItems() {
+      return [
         {
           text: this.$t("features"),
           to: "/#features",
@@ -105,13 +113,7 @@ export default {
           to: "https://github.com/orgs/bitcartcc/projects/1",
           external: true,
         },
-      ],
-      title: "BitcartCC",
-    }
-  },
-  computed: {
-    logoStyle() {
-      return this.$vuetify.theme.dark ? "filter: invert(1)" : ""
+      ]
     },
   },
   created() {
