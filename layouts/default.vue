@@ -11,7 +11,7 @@
         <v-list-item
           v-for="(item, i) in toolbarItems"
           :key="i"
-          :to="item.external ? '' : item.to"
+          :to="item.external ? '' : localePath(item.to)"
           :href="item.external ? item.to : ''"
           :target="item.external ? '_blank' : ''"
         >
@@ -40,7 +40,7 @@
         <v-btn
           v-for="item in toolbarItems"
           :key="item.text"
-          :to="item.external ? '' : item.to"
+          :to="item.external ? '' : localePath(item.to)"
           :href="item.external ? item.to : ''"
           :target="item.external ? '_blank' : ''"
           text

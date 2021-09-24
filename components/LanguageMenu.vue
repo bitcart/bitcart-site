@@ -25,12 +25,13 @@
 
     <v-sheet class="overflow-hidden" rounded>
       <v-list dense expand nav>
-        <template v-for="(item, i) in items">
+        <template v-for="item in items">
           <v-list-item
-            :key="i"
+            :key="item.code"
             class="v-list-item--default"
             :to="switchLocalePath(item.code)"
             replace
+            exact
           >
             <v-list-item-title v-text="item.name" />
           </v-list-item>
