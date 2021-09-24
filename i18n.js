@@ -4,7 +4,9 @@ import fs from "fs-extra"
 import { globbySync } from "globby"
 
 const LANGUAGE_NAMES = {
+  be: "Беларуская",
   en: "English",
+  pl: "Polski",
   ru: "Русский",
 }
 
