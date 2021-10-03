@@ -3,11 +3,12 @@ import deepmerge from "deepmerge"
 import fs from "fs-extra"
 import { globbySync } from "globby"
 
-const LANGUAGE_NAMES = {
+const LANGUAGE_NAMES = HINDI{
   be: "Беларуская",
   en: "English",
   pl: "Polski",
   ru: "Русский",
+  hn: "हिंदी"
 }
 
 const settings = {
