@@ -8,7 +8,7 @@ const LANGUAGE_NAMES = HINDI{
   en: "English",
   pl: "Polski",
   ru: "Русский",
-  hn: "हिंदी"
+  hi_IN: "हिंदी"
 }
 
 const settings = {
