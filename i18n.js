@@ -28,11 +28,21 @@ function addLocale(locale) {
   }
 }
 
+function getLanguageFromPath(file) {
+  const basename = path.basename(file)
+  const lang = basename.substr(0, basename.indexOf("."))
+  return lang
+}
+
 function loadLocales() {
   const paths = globbySync(["./locales/*.json"], {
     cwd: __dirname,
     absolute: true,
-  })
+  }).sort(
+    (a, b) =>
+      Object.keys(LANGUAGE_NAMES).indexOf(getLanguageFromPath(a)) -
+      Object.keys(LANGUAGE_NAMES).indexOf(getLanguageFromPath(b))
+  )
   paths.forEach((file) => {
     const basename = path.basename(file)
     const lang = basename.substr(0, basename.indexOf("."))
