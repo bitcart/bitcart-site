@@ -6,6 +6,7 @@ import { globbySync } from "globby"
 const LANGUAGE_NAMES = {
   be: "Беларуская",
   en: "English",
+  fr: "Français",
   pl: "Polski",
   ru: "Русский",
   hi_IN: "हिंदी",
