@@ -1,29 +1,9 @@
-version: 2
+version: 2.1
+
+orbs:
+  bitcartcc: bitcartcc/bitcartcc-shared@1
 
 jobs:
-  test:
-    docker:
-      - image: circleci/node:16
-
-    working_directory: ~/repo
-
-    steps:
-      - checkout
-
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}-{{ .Branch }}
-            - v1-dependencies-
-
-      - run: yarn install
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}-{{ .Branch }}
-
-      - run: yarn lint
-
   publish:
     docker:
       - image: cimg/python:3.7
@@ -43,11 +23,16 @@ workflows:
   version: 2
   test:
     jobs:
-      - test
+      - bitcartcc/lint:
+          name: lint
+          executor: bitcartcc/python-node
+          pre-steps:
+            - checkout
+            - bitcartcc/install-node-dependencies
       - publish:
           context: global
           requires:
-            - test
+            - lint
           filters:
             branches:
               only: master

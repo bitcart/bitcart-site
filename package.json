@@ -11,11 +11,9 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "prepare": "husky install",
+    "lintfix:precommit": "eslint --fix",
+    "prettier": "prettier --write --list-different --ignore-unknown",
     "release": "scripts/release.sh"
-  },
-  "lint-staged": {
-    "*.{js,vue}": "eslint"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
@@ -35,8 +33,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "fs-extra": "^10.0.0",
     "globby": "^12.0.2",
-    "husky": "^7.0.0",
-    "lint-staged": "^12.0.0",
     "prettier": "^2.2.1"
   }
 }
