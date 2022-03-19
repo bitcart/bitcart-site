@@ -66,13 +66,10 @@ export default {
    ** Build configuration
    */
   build: {
-    extend(config, { isDev, isClient }) {
-      if (!isDev) {
-        // relative links
-        config.output.publicPath = "./_nuxt/"
-      }
-      return config
-    },
+    /*
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {},
   },
   i18n,
 }
