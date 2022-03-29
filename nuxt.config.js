@@ -20,8 +20,10 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  env: {
+  publicRuntimeConfig: {
     store: process.env.BITCART_STORE || "1",
+    matomoURL: process.env.MATOMO_URL || "",
+    matomoID: parseInt(process.env.MATOMO_ID || "1"),
   },
   /*
    ** Customize the progress-bar color
@@ -34,7 +36,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: "~/plugins/vue-matomo.js", ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */

@@ -106,11 +106,11 @@ export default {
   },
   methods: {
     showDonation() {
-      // process.env is got from env section in nuxt.config.js
+      // this.$config is got from publicRuntimeConfig section in nuxt.config.js
       this.price = 5 // 5$
       this.$axios
         .post("https://api.bitcartcc.com/invoices", {
-          store_id: process.env.store,
+          store_id: this.$config.store,
           price: this.price,
         })
         .then((res) => {

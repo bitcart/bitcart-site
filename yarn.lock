@@ -5170,7 +5170,7 @@ jest-worker@^27.3.1:
     supports-color "^8.0.0"
 
 jimp-compact@^0.16.1:
-  version "0.16.2"
+  version "0.16.1"
   resolved "https://registry.yarnpkg.com/jimp-compact/-/jimp-compact-0.16.2.tgz#650bf90698eb7af797e20bf5f5cdccd137e7d08a"
   integrity sha512-F/r0L283J46xiGUEvUb3jxUsei7aB94g3NRIMuJ4WhbpEcJV2U5GpaUNJLnBiOP2+x4lLTI4UiRVrmbrXQAOMA==
 
@@ -8715,6 +8715,11 @@ vue-loader@^15.9.7:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-matomo@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/vue-matomo/-/vue-matomo-4.1.0.tgz#17b513bc8ac60e168bfa8190ad05b3257a3c441e"
+  integrity sha512-y+tdmhY835Ip3EAGfIAgA33+aBYrvRT7fNnBnA7bSM459XpoWXgqJKdbopVpEUrxCPIq8IkuF7g4KqSLc0Fa3w==
 
 vue-meta@^2.4.0:
   version "2.4.0"
