@@ -5,7 +5,8 @@
   "start-accepting-crypto": "Start Accepting Crypto Payments With 0% Fees & No Third-party",
   "what-is-bitcartcc": "What is BitcartCC",
   "bitcartcc-opensource-free": "BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free.",
-  "receive-crypto": "Receive cryptocurrency payments without any fees or third-party involvement. You are your own bank. Funds go directly to your wallet; your private key is never required.",
+  "receive-crypto": "Receive cryptocurrency and token payments without any fees or third-party involvement. You are your own bank. Funds go directly to your wallet; your private key is never required.",
+  "supported-currencies": "We support classical blockchains like Bitcoin, Bitcoin Cash, Litecoin and others, as well as EVM-based blockchains like Ethereum, Binance Smart Chain and token platforms like ERC20, BEP20 and others.",
   "live-demo": "Live Demo",
   "donate": "Donate",
   "join-community": "Join the community",
@@ -21,7 +22,7 @@
   "communities-2": "Github",
   "communities-3": "Discord",
   "communities-4": "Reddit",
-  "feature-1-text": "Receive or perform cryptocurrency payments as a business or an individual. No fees. No third-party.",
+  "feature-1-text": "Receive or perform cryptocurrency and token payments as a business or an individual. No fees. No third-party.",
   "feature-1-more": "BitcartCC is using electrum wallet you know and love. Your private key never leaves your PC.",
   "feature-1-links-1": "Try out the live demo",
   "feature-2-text": "Fast, easy to use and secure",
@@ -46,6 +47,7 @@
   "feature-7-links-2": "Deployment guides",
   "feature-8-text": "Supporting multiple coins, APIs remain the same",
   "feature-8-more": "A variety of different coins is available, and you can use any of them in the same way. Enabling new coin in docker installation is a matter of one command.",
+  "feature-8-links-1": "Supported coins list",
   "feature-9-text": "Powerful SDK libraries to create apps of any kind",
   "feature-9-more": "Powerful python SDK is available. Or just connect to BitcartCC daemon from any programming language You can even create a blockchain explorer, atomic swaps bot, or a wallet with it!",
   "feature-9-links-1": "Python SDK",
@@ -54,5 +56,8 @@
   "feature-10-text": "Modular and extensible",
   "feature-10-more": "BitcartCC is composed of different independent components, you can pick only the ones you need",
   "feature-10-links-1": "BitcartCC components diagram",
-  "feature-10-links-2": "Architecture"
+  "feature-10-links-2": "Architecture",
+  "supported-coins": "Supported coins",
+  "token-platform-desc": "For token platforms we support any token following standards. But also we extract most popular tokens in a pre-defined list you can select from. Here is the current token list:",
+  "platform": "Platform"
 }

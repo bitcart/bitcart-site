@@ -33,8 +33,9 @@
         src="/icon.svg"
         :style="logoStyle"
         class="mr-2"
+        @click="goHome"
       />
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title @click="goHome" v-text="title" />
       <v-spacer />
       <v-toolbar-items v-if="$vuetify.breakpoint.smAndUp">
         <v-btn
@@ -126,6 +127,9 @@ export default {
   methods: {
     changeTheme() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+    },
+    goHome() {
+      this.$router.push("/")
     },
   },
 }

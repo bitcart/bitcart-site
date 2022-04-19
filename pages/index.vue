@@ -29,6 +29,9 @@
         <p>
           {{ $t("receive-crypto") }}
         </p>
+        <p>
+          {{ $t("supported-currencies") }}
+        </p>
         <div>
           <v-btn
             class="success"

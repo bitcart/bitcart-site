@@ -22,9 +22,10 @@
           <v-tooltip v-for="link in item.links" :key="link.url" bottom>
             <template #activator="{ on, attrs }">
               <v-btn
-                :href="link.url"
+                :href="link.internal ? '' : link.url"
+                :target="link.internal ? '' : '_blank'"
+                :to="link.internal ? link.url : ''"
                 v-bind="attrs"
-                target="_blank"
                 class="success mr-2 mb-2"
                 v-on="on"
               >

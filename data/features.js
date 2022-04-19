@@ -85,6 +85,13 @@ export default function (i18n) {
       text: i18n.t("feature-8-text"),
       moreText: i18n.t("feature-8-more"),
       icon: "mdi-circle-multiple-outline",
+      links: [
+        {
+          text: i18n.t("feature-8-links-1"),
+          url: "/coins",
+          internal: true,
+        },
+      ],
     },
     {
       text: i18n.t("feature-9-text"),
