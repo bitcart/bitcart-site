@@ -24,7 +24,7 @@
               <v-btn
                 :href="link.internal ? '' : link.url"
                 :target="link.internal ? '' : '_blank'"
-                :to="link.internal ? link.url : ''"
+                :to="link.internal ? localePath(link.url) : ''"
                 v-bind="attrs"
                 class="success mr-2 mb-2"
                 v-on="on"
