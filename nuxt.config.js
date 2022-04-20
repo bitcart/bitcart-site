@@ -53,6 +53,7 @@ export default {
     "@nuxtjs/i18n",
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "@nuxtjs/sitemap",
   ],
   /*
    ** Axios module configuration
