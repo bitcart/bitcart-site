@@ -76,6 +76,6 @@ export default {
   },
   i18n,
   sitemap: {
-    hostname: "bitcartcc.com",
+    hostname: "https://bitcartcc.com",
   },
 }
