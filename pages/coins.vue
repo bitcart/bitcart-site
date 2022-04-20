@@ -37,7 +37,6 @@ export default {
     this.$axios.get("https://api.bitcartcc.com/cryptos/supported").then((r) => {
       this.currencies = r.data
       for (const currency in this.currencies) {
-        console.log(currency)
         this.$axios
           .get(`https://api.bitcartcc.com/cryptos/tokens/${currency}`)
           .then((r) => this.$set(this.tokenList, currency, r.data.result))
