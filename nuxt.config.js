@@ -75,4 +75,7 @@ export default {
     extend(config, ctx) {},
   },
   i18n,
+  sitemap: {
+    hostname: "bitcartcc.com",
+  },
 }

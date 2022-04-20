@@ -129,7 +129,7 @@ export default {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark
     },
     goHome() {
-      this.$router.push("/")
+      this.$router.push(this.localePath("/"))
     },
   },
 }
