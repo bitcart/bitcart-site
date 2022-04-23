@@ -56,7 +56,7 @@ loadLocales()
 
 locales.forEach((locale) => {
   const langName = LANGUAGE_NAMES[locale.lang] || locale.lang
-  settings.locales.push({ code: locale.lang, name: langName })
+  settings.locales.push({ code: locale.lang, iso: locale.lang, name: langName })
   settings.vueI18n.messages[locale.lang] = locale.strings
 })
 

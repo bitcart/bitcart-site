@@ -75,6 +75,9 @@ export default {
       title: "BitcartCC",
     }
   },
+  head() {
+    return this.$nuxtI18nHead({ addSeoAttributes: true })
+  },
   computed: {
     logoStyle() {
       return this.$vuetify.theme.dark ? "filter: invert(1)" : ""
