@@ -44,6 +44,9 @@
             {{ $t("donate") }}
             <v-icon> mdi-chevron-right-circle </v-icon>
           </v-btn>
+          <v-btn to="/supporters" class="success">{{
+            $t("support-as-a-company")
+          }}</v-btn>
         </div>
       </v-col>
       <v-col cols="12" md="6">

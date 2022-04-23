@@ -77,5 +77,6 @@ export default {
   i18n,
   sitemap: {
     hostname: "https://bitcartcc.com",
+    routes: ["/supporters.json"],
   },
 }

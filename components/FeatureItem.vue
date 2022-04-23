@@ -2,16 +2,24 @@
   <div class="p-4 col-12 col-md-6 col-lg-4 col-xl-3">
     <v-card flat outlined height="100%">
       <v-card-title class="justify-center pt-4">
-        <v-icon size="75px" color="green" class="feature-icon">
+        <v-icon v-if="item.icon" size="75px" color="green" class="feature-icon">
           {{ item.icon }}
         </v-icon>
+        <v-img
+          v-else
+          :src="item.image"
+          max-width="150px"
+          max-height="150px"
+          contain
+        >
+        </v-img>
       </v-card-title>
       <v-card-text>
         <v-row class="text--primary" style="font-size: 16px">
-          <v-col cols="12">
+          <v-col cols="12" class="text-center text-h6 feature-font">
             {{ item.text }}
           </v-col>
-          <v-col cols="12">
+          <v-col v-if="item.moreText" cols="12">
             {{ item.moreText }}
           </v-col>
         </v-row>
@@ -63,3 +71,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.feature-font {
+  font-size: 1.1rem !important;
+}
+</style>

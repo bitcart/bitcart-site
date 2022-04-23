@@ -9,6 +9,7 @@
   "supported-currencies": "We support classical blockchains like Bitcoin, Bitcoin Cash, Litecoin and others, as well as EVM-based blockchains (Ethereum, Binance Smart Chain) and token platforms like ERC20, BEP20 and others.",
   "live-demo": "Live Demo",
   "donate": "Donate",
+  "support-as-a-company": "Support as a company",
   "join-community": "Join the community",
   "bitcartcc-not-a-company": "BitcartCC is an open-source project, not a company. We rely on a network of diverse contributors and users to provide support for numerous use-cases. Join us in improving, learning, and building BitcartCC.",
   "features": "Features",
@@ -59,5 +60,9 @@
   "feature-10-links-2": "Architecture",
   "supported-coins": "Supported coins",
   "token-platform-desc": "For token platforms we support any token following standards. But also we extract most popular tokens in a pre-defined list you can select from. Here is the current token list:",
-  "platform": "Platform"
+  "platform": "Platform",
+  "companies-support-perks": "Those companies have supported BitcartCC development and receive priority support.",
+  "support-bitcartcc-as-company": "If you want to support BitcartCC as a company, please",
+  "email-us": "email us",
+  "details": "Details"
 }
