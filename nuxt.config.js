@@ -2,6 +2,7 @@ import i18n from "./i18n.js"
 
 export default {
   telemetry: false,
+  target: "static",
   ssr: false,
   /*
    ** Headers of the page
@@ -78,5 +79,9 @@ export default {
   sitemap: {
     hostname: "https://bitcartcc.com",
     routes: ["/supporters.json"],
+  },
+  generate: {
+    fallback: "404.html",
+    subFolders: false,
   },
 }
