@@ -2,5 +2,5 @@
 set -e
 pip install transifex-client
 tx pull --parallel -asf
-yarn build
+yarn generate
 set +e
