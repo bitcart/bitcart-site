@@ -3,7 +3,7 @@ import i18n from "./i18n.js"
 export default {
   telemetry: false,
   target: "static",
-  ssr: false,
+  ssr: true,
   /*
    ** Headers of the page
    */
