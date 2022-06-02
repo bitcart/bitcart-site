@@ -5,8 +5,8 @@
         <hgroup class="mb-5">
           <p
             :class="{
-              'display-4': $vuetify.breakpoint.mdAndUp,
-              'display-2': $vuetify.breakpoint.smAndDown,
+              'display-4': $device.isDesktop,
+              'display-2': $device.isMobile,
             }"
             class="pb-4 font-weight-bold green--text"
           >

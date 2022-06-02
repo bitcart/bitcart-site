@@ -45,6 +45,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     "@nuxtjs/eslint-module",
     "@nuxtjs/vuetify",
+    "@nuxtjs/device",
   ],
   /*
    ** Nuxt.js modules

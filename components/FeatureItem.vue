@@ -38,9 +38,7 @@
                 v-on="on"
               >
                 <span
-                  :style="
-                    $vuetify.breakpoint.xsOnly ? { 'max-width': '150px' } : {}
-                  "
+                  :style="$device.isMobile ? { 'max-width': '150px' } : {}"
                   class="d-inline-block text-truncate"
                 >
                   {{ link.text }}

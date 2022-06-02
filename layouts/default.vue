@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-navigation-drawer
-      v-if="isMounted && !$vuetify.breakpoint.smAndUp"
+      v-if="$device.isMobile"
       v-model="drawer"
       clipped
       fixed
@@ -23,7 +23,7 @@
     </v-navigation-drawer>
     <v-app-bar clipped-left fixed app>
       <v-app-bar-nav-icon
-        v-if="isMounted && !$vuetify.breakpoint.smAndUp"
+        v-if="$device.isMobile"
         @click.stop="drawer = !drawer"
       />
       <v-img
@@ -37,7 +37,7 @@
       />
       <v-toolbar-title @click="goHome" v-text="title" />
       <v-spacer />
-      <v-toolbar-items v-if="isMounted && $vuetify.breakpoint.smAndUp">
+      <v-toolbar-items v-if="$device.isDesktop">
         <v-btn
           v-for="item in toolbarItems"
           :key="item.text"
@@ -71,7 +71,6 @@ export default {
   },
   data() {
     return {
-      isMounted: false,
       drawer: false,
       title: "BitcartCC",
     }
@@ -129,9 +128,6 @@ export default {
         this.$vuetify.theme.dark = true
       }
     }
-  },
-  mounted() {
-    this.isMounted = true
   },
   methods: {
     changeTheme() {
