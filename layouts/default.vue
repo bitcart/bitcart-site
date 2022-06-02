@@ -121,10 +121,12 @@ export default {
     },
   },
   created() {
-    const hours = new Date().getHours()
-    const isDayTime = hours > 6 && hours < 20
-    if (!isDayTime) {
-      this.$vuetify.theme.dark = true
+    if (process.client) {
+      const hours = new Date().getHours()
+      const isDayTime = hours > 6 && hours < 20
+      if (!isDayTime) {
+        this.$vuetify.theme.dark = true
+      }
     }
   },
   methods: {
