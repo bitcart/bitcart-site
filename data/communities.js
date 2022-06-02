@@ -1,9 +1,11 @@
+import TelegramIcon from "@/components/TelegramIcon"
+
 export default function (i18n) {
   return [
     {
       name: i18n.t("communities-1"),
       url: "https://t.me/bitcartcc",
-      icon: "$vuetify.icons.telegram",
+      component: TelegramIcon,
     },
     {
       name: i18n.t("communities-2"),

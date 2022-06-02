@@ -63,9 +63,10 @@
             target="_blank"
             class="mb-2"
           >
-            <v-icon size="30px">
+            <v-icon v-if="community.icon" size="30px">
               {{ community.icon }}
             </v-icon>
+            <component :is="community.component" v-else />
             {{ community.name }}
           </v-btn>
         </div>
