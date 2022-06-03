@@ -5,8 +5,8 @@
         <hgroup class="mb-5">
           <p
             :class="{
-              'display-4': $device.isDesktop,
-              'display-2': $device.isMobile,
+              'display-4': $mq === 'desktop',
+              'display-2': $mq === 'mobile',
             }"
             class="pb-4 font-weight-bold green--text"
           >

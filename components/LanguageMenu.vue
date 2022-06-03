@@ -12,7 +12,7 @@
   >
     <template #activator="{ attrs, on }">
       <v-btn
-        :icon="$device.isMobile"
+        :icon="$mq === 'mobile'"
         class="text--secondary px-0 px-md-2"
         text
         v-bind="attrs"

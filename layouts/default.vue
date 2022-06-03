@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-navigation-drawer
-      v-if="$device.isMobile"
+      v-if="$mq === 'mobile'"
       v-model="drawer"
       clipped
       fixed
@@ -23,7 +23,7 @@
     </v-navigation-drawer>
     <v-app-bar clipped-left fixed app>
       <v-app-bar-nav-icon
-        v-if="$device.isMobile"
+        v-if="$mq === 'mobile'"
         @click.stop="drawer = !drawer"
       />
       <v-img
@@ -37,7 +37,7 @@
       />
       <v-toolbar-title @click="goHome" v-text="title" />
       <v-spacer />
-      <v-toolbar-items v-if="$device.isDesktop">
+      <v-toolbar-items v-if="$mq === 'desktop'">
         <v-btn
           v-for="item in toolbarItems"
           :key="item.text"

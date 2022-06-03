@@ -37,7 +37,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "~/plugins/vue-matomo.js", ssr: false }],
+  plugins: ["~/plugins/mq.js", { src: "~/plugins/vue-matomo.js", ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -45,7 +45,6 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     "@nuxtjs/eslint-module",
     "@nuxtjs/vuetify",
-    "@nuxtjs/device",
   ],
   /*
    ** Nuxt.js modules
