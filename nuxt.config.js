@@ -88,6 +88,14 @@ export default {
     splitChunks: {
       pages: false,
     },
+    babel: {
+      presets({ isClient }, preset) {
+        if (isClient) {
+          preset[1].targets = { browsers: "> 0.25%, not dead" }
+        }
+        return [preset]
+      },
+    },
   },
   i18n,
   sitemap: {
