@@ -9,7 +9,7 @@ const LANGUAGE_NAMES = {
   fr: "Français",
   pl: "Polski",
   ru: "Русский",
-  hi_IN: "हिंदी",
+  hi: "हिंदी",
 }
 
 const settings = {

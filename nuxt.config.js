@@ -29,6 +29,7 @@ export default {
     ],
   },
   publicRuntimeConfig: {
+    domain: process.env.BITCART_DOMAIN || "http://localhost:3000",
     store: process.env.BITCART_STORE || "1",
     matomoURL: process.env.MATOMO_URL || "",
     matomoID: parseInt(process.env.MATOMO_ID || "1"),
@@ -97,7 +98,12 @@ export default {
       },
     },
   },
-  i18n,
+  i18n: {
+    ...i18n,
+    baseUrl: ({ $config }) => {
+      return $config.domain
+    },
+  },
   sitemap: {
     hostname: "https://bitcartcc.com",
     routes: ["/supporters.json"],
