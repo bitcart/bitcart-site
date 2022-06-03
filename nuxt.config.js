@@ -85,9 +85,7 @@ export default {
      */
     extend(config, ctx) {},
     // https://github.com/nuxt-community/vuetify-module/issues/232
-    splitChunks: {
-      pages: false,
-    },
+    extractCSS: true,
     babel: {
       presets({ isClient }, preset) {
         if (isClient) {
