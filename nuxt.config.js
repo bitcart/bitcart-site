@@ -19,7 +19,14 @@ export default {
         content: process.env.npm_package_description || "",
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: "",
+      },
+    ],
   },
   publicRuntimeConfig: {
     store: process.env.BITCART_STORE || "1",
@@ -33,7 +40,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["~/assets/fonts.css"], // use local fonts
+  css: ["~/assets/main.sass"],
   /*
    ** Plugins to load before mounting the App
    */

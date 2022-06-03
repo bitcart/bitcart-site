@@ -76,7 +76,25 @@ export default {
     }
   },
   head() {
-    return this.$nuxtI18nHead({ addSeoAttributes: true })
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
+    return {
+      htmlAttrs: i18nHead.htmlAttrs,
+      meta: i18nHead.meta,
+      link: [
+        {
+          rel: "preload",
+          as: "style",
+          href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap",
+          media: "print",
+          onload: "this.media='all'",
+        },
+        ...i18nHead.link,
+      ],
+    }
   },
   computed: {
     logoStyle() {
