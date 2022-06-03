@@ -73,6 +73,11 @@ export default {
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
    */
+  pwa: {
+    meta: {
+      theme_color: "#4CAF50",
+    },
+  },
   vuetify: {
     defaultAssets: false,
     optionsPath: "./vuetify.options.js",
