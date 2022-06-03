@@ -74,6 +74,10 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
+    // https://github.com/nuxt-community/vuetify-module/issues/232
+    splitChunks: {
+      pages: false,
+    },
   },
   i18n,
   sitemap: {
