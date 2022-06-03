@@ -1,3 +1,4 @@
+import MatrixIcon from "@/components/MatrixIcon"
 import TelegramIcon from "@/components/TelegramIcon"
 
 export default function (i18n) {
@@ -16,6 +17,11 @@ export default function (i18n) {
       name: i18n.t("communities-3"),
       url: "https://discord.gg/8H2Sfdh",
       icon: "$mdiDiscord",
+    },
+    {
+      name: i18n.t("communities-5"),
+      url: "https://matrix.to/#/#bitcartcc:matrix.org",
+      component: MatrixIcon,
     },
     {
       name: i18n.t("communities-4"),
