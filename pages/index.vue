@@ -99,7 +99,7 @@ export default {
   head() {
     return {
       script: [
-        { src: "https://admin.bitcartcc.com/modal/bitcart.js" }, // include modal script from BitcartCC Admin instance
+        { src: "https://admin.bitcartcc.com/modal/bitcart.js", async: true }, // include modal script from BitcartCC Admin instance
       ],
     }
   },
