@@ -18,8 +18,8 @@
         v-bind="attrs"
         v-on="on"
       >
-        <v-icon>mdi-translate</v-icon>
-        <v-icon class="hidden-sm-and-down" size="14"> mdi-chevron-down </v-icon>
+        <v-icon>$mdiTranslate</v-icon>
+        <v-icon class="hidden-sm-and-down" size="14"> $mdiChevronDown </v-icon>
       </v-btn>
     </template>
 

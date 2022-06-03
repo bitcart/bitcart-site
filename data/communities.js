@@ -10,17 +10,17 @@ export default function (i18n) {
     {
       name: i18n.t("communities-2"),
       url: "https://github.com/bitcartcc/bitcart",
-      icon: "mdi-github",
+      icon: "$mdiGithub",
     },
     {
       name: i18n.t("communities-3"),
       url: "https://discord.gg/8H2Sfdh",
-      icon: "mdi-discord",
+      icon: "$mdiDiscord",
     },
     {
       name: i18n.t("communities-4"),
       url: "https://www.reddit.com/r/BitcartCC",
-      icon: "mdi-reddit",
+      icon: "$mdiReddit",
     },
   ]
 }

@@ -50,7 +50,7 @@
         </v-btn>
       </v-toolbar-items>
       <language-menu />
-      <v-icon @click.stop="changeTheme"> mdi-moon-waning-crescent </v-icon>
+      <v-icon @click.stop="changeTheme"> $mdiMoonWaningCrescent </v-icon>
     </v-app-bar>
     <v-main>
       <v-container>

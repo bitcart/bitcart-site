@@ -33,7 +33,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ["~/assets/fonts.css"], // use local fonts
   /*
    ** Plugins to load before mounting the App
    */
@@ -65,7 +65,10 @@ export default {
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
    */
-  vuetify: {},
+  vuetify: {
+    defaultAssets: false,
+    optionsPath: "./vuetify.options.js",
+  },
   /*
    ** Build configuration
    */

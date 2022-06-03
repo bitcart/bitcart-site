@@ -42,7 +42,7 @@
           </v-btn>
           <v-btn class="success" @click.stop="showDonation">
             {{ $t("donate") }}
-            <v-icon> mdi-chevron-right-circle </v-icon>
+            <v-icon> $mdiChevronRightCircle </v-icon>
           </v-btn>
           <v-btn :to="localePath('/supporters')" class="success">{{
             $t("support-as-a-company")

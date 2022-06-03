@@ -3,7 +3,7 @@ export default function (i18n) {
     {
       text: i18n.t("feature-1-text"),
       moreText: i18n.t("feature-1-more"),
-      icon: "mdi-currency-btc",
+      icon: "$mdiCurrencyBtc",
       links: [
         {
           text: i18n.t("feature-1-links-1"),
@@ -14,17 +14,17 @@ export default function (i18n) {
     {
       text: i18n.t("feature-2-text"),
       moreText: i18n.t("feature-2-more"),
-      icon: "mdi-speedometer",
+      icon: "$mdiSpeedometer",
     },
     {
       text: i18n.t("feature-3-text"),
       moreText: i18n.t("feature-3-more"),
-      icon: "mdi-key",
+      icon: "$mdiKey",
     },
     {
       text: i18n.t("feature-4-text"),
       moreText: i18n.t("feature-4-more"),
-      icon: "mdi-store",
+      icon: "$mdiStore",
       links: [
         {
           text: i18n.t("feature-4-links-1"),
@@ -43,7 +43,7 @@ export default function (i18n) {
     {
       text: i18n.t("feature-5-text"),
       moreText: i18n.t("feature-5-more"),
-      icon: "mdi-open-source-initiative",
+      icon: "$mdiOpenSourceInitiative",
       links: [
         {
           text: i18n.t("feature-5-links-1"),
@@ -54,7 +54,7 @@ export default function (i18n) {
     {
       text: i18n.t("feature-6-text"),
       moreText: i18n.t("feature-6-more"),
-      icon: "mdi-flash",
+      icon: "$mdiFlash",
       links: [
         {
           text: i18n.t("feature-6-links-1"),
@@ -69,7 +69,7 @@ export default function (i18n) {
     {
       text: i18n.t("feature-7-text"),
       moreText: i18n.t("feature-7-more"),
-      icon: "mdi-server",
+      icon: "$mdiServer",
       links: [
         {
           text: i18n.t("feature-7-links-1"),
@@ -84,7 +84,7 @@ export default function (i18n) {
     {
       text: i18n.t("feature-8-text"),
       moreText: i18n.t("feature-8-more"),
-      icon: "mdi-circle-multiple-outline",
+      icon: "$mdiCircleMultipleOutline",
       links: [
         {
           text: i18n.t("feature-8-links-1"),
@@ -96,7 +96,7 @@ export default function (i18n) {
     {
       text: i18n.t("feature-9-text"),
       moreText: i18n.t("feature-9-more"),
-      icon: "mdi-dev-to",
+      icon: "$mdiDevTo",
       links: [
         {
           text: i18n.t("feature-9-links-1"),
@@ -115,7 +115,7 @@ export default function (i18n) {
     {
       text: i18n.t("feature-10-text"),
       moreText: i18n.t("feature-10-more"),
-      icon: "mdi-puzzle",
+      icon: "$mdiPuzzle",
       links: [
         {
           text: i18n.t("feature-10-links-1"),
