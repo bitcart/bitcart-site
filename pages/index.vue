@@ -40,7 +40,7 @@
           >
             {{ $t("live-demo") }}
           </v-btn>
-          <v-btn class="success" @click.stop="showDonation">
+          <v-btn class="success" :loading="loading" @click.stop="showDonation">
             {{ $t("donate") }}
             <v-icon> $mdiChevronRightCircle </v-icon>
           </v-btn>
@@ -96,6 +96,11 @@ export default {
   components: {
     FeatureItem,
   },
+  data() {
+    return {
+      loading: false,
+    }
+  },
   head() {
     return {
       script: [
@@ -115,12 +120,14 @@ export default {
     showDonation() {
       // this.$config is got from publicRuntimeConfig section in nuxt.config.js
       this.price = 5 // 5$
+      this.loading = true
       this.$axios
         .post("https://api.bitcartcc.com/invoices", {
           store_id: this.$config.store,
           price: this.price,
         })
         .then((res) => {
+          this.loading = false
           window.bitcart.showInvoice(res.data.id)
         })
     },
