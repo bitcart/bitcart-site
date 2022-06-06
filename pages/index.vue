@@ -2,20 +2,20 @@
   <v-container>
     <v-row>
       <v-col>
-        <hgroup class="mb-5">
-          <p
+        <div class="mb-5 title-group">
+          <h1
             :class="{
               'display-4': $mq === 'desktop',
               'display-2': $mq === 'mobile',
             }"
-            class="pb-4 font-weight-bold green--text"
+            class="pb-8 font-weight-bold green--text"
           >
             BitcartCC
-          </p>
+          </h1>
           <h2>
             {{ $t("start-accepting-crypto") }}
           </h2>
-        </hgroup>
+        </div>
       </v-col>
     </v-row>
     <v-row class="mb-5">
@@ -128,14 +128,11 @@ export default {
 }
 </script>
 <style lang="scss">
-h1 {
-  font-size: 6rem;
-}
 h2 {
   margin-bottom: 8px;
 }
 
-hgroup {
+.title-group {
   h2 {
     margin-top: -30px;
   }

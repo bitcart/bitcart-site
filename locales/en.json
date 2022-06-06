@@ -65,5 +65,7 @@
   "companies-support-perks": "Those companies have supported BitcartCC development and receive priority support.",
   "support-bitcartcc-as-company": "If you want to support BitcartCC as a company, please",
   "email-us": "email us",
-  "details": "Details"
+  "details": "Details",
+  "language": "Language",
+  "color-mode": "Color mode"
 }

@@ -16,6 +16,7 @@
         class="text--secondary px-0 px-md-2"
         text
         v-bind="attrs"
+        :aria-label="$t('language')"
         v-on="on"
       >
         <v-icon>$mdiTranslate</v-icon>

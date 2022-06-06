@@ -50,7 +50,9 @@
         </v-btn>
       </v-toolbar-items>
       <language-menu />
-      <v-icon @click.stop="changeTheme"> $mdiMoonWaningCrescent </v-icon>
+      <v-icon :aria-label="$t('color-mode')" @click.stop="changeTheme">
+        $mdiMoonWaningCrescent
+      </v-icon>
     </v-app-bar>
     <v-main>
       <v-container>

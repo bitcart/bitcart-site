@@ -24,7 +24,7 @@ export default {
       {
         rel: "preconnect",
         href: "https://fonts.gstatic.com",
-        crossorigin: "",
+        crossorigin: "anonymous",
       },
     ],
   },
