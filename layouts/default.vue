@@ -71,9 +71,9 @@
         "sameAs": [
           "https://twitter.com/BitcartCC",
           "https://github.com/bitcartcc",
-          "https://reddit.com/r/BitcartCC"
+          "https://reddit.com/r/BitcartCC",
           "https://linkedin.com/company/bitcartcc",
-          "https://instagram.com/bitcartcc",
+          "https://instagram.com/bitcartcc"
         ]
       }
     </script>

@@ -76,6 +76,8 @@ export default {
   pwa: {
     meta: {
       theme_color: "#4CAF50",
+      ogHost: "https://bitcartcc.com",
+      twitterCard: "summary",
     },
   },
   vuetify: {
