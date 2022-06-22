@@ -7,6 +7,7 @@ export default ({ app, $config }) => {
       router: app.router,
       siteId: $config.matomoID,
       host: $config.matomoURL,
+      enableHeartBeatTimer: true,
     })
   }
 }

@@ -62,6 +62,21 @@
     <v-footer fixed app class="justify-center">
       <span>&copy; BitcartCC 2018-{{ new Date().getFullYear() }}</span>
     </v-footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BitcartCC",
+        "url": "https://bitcartcc.com",
+        "sameAs": [
+          "https://twitter.com/BitcartCC",
+          "https://github.com/bitcartcc",
+          "https://reddit.com/r/BitcartCC"
+          "https://linkedin.com/company/bitcartcc",
+          "https://instagram.com/bitcartcc",
+        ]
+      }
+    </script>
   </v-app>
 </template>
 
