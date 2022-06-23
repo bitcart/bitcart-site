@@ -21,6 +21,14 @@ import {
 export default {
   theme: {
     variations: false,
+    themes: {
+      light: {
+        success: "#39833f",
+      },
+      dark: {
+        success: "#39833f",
+      },
+    },
   },
   icons: {
     iconfont: "mdiSvg",

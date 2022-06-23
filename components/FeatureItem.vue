@@ -5,7 +5,7 @@
         <v-icon
           v-if="item.icon"
           size="75px"
-          color="#39833f"
+          color="success"
           class="feature-icon"
         >
           {{ item.icon }}
@@ -40,7 +40,6 @@
                 :to="link.internal ? localePath(link.url) : ''"
                 v-bind="attrs"
                 class="success mr-2 mb-2"
-                style="background-color: #39833f !important"
                 v-on="on"
               >
                 <span
