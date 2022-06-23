@@ -8,11 +8,11 @@
               'display-4': $mq === 'desktop',
               'display-2': $mq === 'mobile',
             }"
-            class="pb-8 font-weight-bold green--text"
+            class="pb-8 font-weight-bold black--text"
           >
             BitcartCC
           </h1>
-          <h2>
+          <h2 class="grey--text text--darken-1">
             {{ $t("start-accepting-crypto") }}
           </h2>
         </div>
@@ -20,7 +20,7 @@
     </v-row>
     <v-row class="mb-5">
       <v-col cols="12" md="6">
-        <h2 class="green--text text--darken-2">
+        <h2 style="color: #39833f">
           {{ $t("what-is-bitcartcc") }}
         </h2>
         <p>
@@ -36,21 +36,32 @@
           <v-btn
             class="success"
             href="https://admin.bitcartcc.com"
+            style="background-color: #39833f !important"
             target="blank_"
           >
             {{ $t("live-demo") }}
           </v-btn>
-          <v-btn class="success" :loading="loading" @click.stop="showDonation">
+          <v-btn
+            class="success"
+            :loading="loading"
+            style="background-color: #39833f !important"
+            @click.stop="showDonation"
+          >
             {{ $t("donate") }}
             <v-icon> $mdiChevronRightCircle </v-icon>
           </v-btn>
-          <v-btn :to="localePath('/supporters')" class="success">{{
-            $t("support-as-a-company")
-          }}</v-btn>
+          <v-btn
+            :to="localePath('/supporters')"
+            class="success"
+            style="background-color: #39833f !important"
+            >{{ $t("support-as-a-company") }}</v-btn
+          >
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <h2 class="green--text text--darken-2">{{ $t("join-community") }}</h2>
+        <h2 style="color: #39833f">
+          {{ $t("join-community") }}
+        </h2>
         <p>
           {{ $t("bitcartcc-not-a-company") }}
         </p>
