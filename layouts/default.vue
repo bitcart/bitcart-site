@@ -102,6 +102,16 @@ export default {
           name: "twitter:image",
           content: this.$config.domain + this.$icon(512),
         },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "BitcartCC",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: process.env.npm_package_description,
+        },
         ...i18nHead.meta,
       ],
       link: [
