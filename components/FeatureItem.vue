@@ -2,7 +2,12 @@
   <div class="p-4 col-12 col-md-6 col-lg-4 col-xl-3">
     <v-card flat outlined height="100%">
       <v-card-title class="justify-center pt-4">
-        <v-icon v-if="item.icon" size="75px" color="green" class="feature-icon">
+        <v-icon
+          v-if="item.icon"
+          size="75px"
+          color="success"
+          class="feature-icon"
+        >
           {{ item.icon }}
         </v-icon>
         <v-img

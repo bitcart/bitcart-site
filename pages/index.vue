@@ -8,7 +8,7 @@
               'display-4': $mq === 'desktop',
               'display-2': $mq === 'mobile',
             }"
-            class="pb-8 font-weight-bold green--text"
+            class="success--text pb-8 font-weight-bold"
           >
             BitcartCC
           </h1>
@@ -20,7 +20,7 @@
     </v-row>
     <v-row class="mb-5">
       <v-col cols="12" md="6">
-        <h2 class="green--text text--darken-2">
+        <h2 class="success--text">
           {{ $t("what-is-bitcartcc") }}
         </h2>
         <p>
@@ -50,7 +50,9 @@
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <h2 class="green--text text--darken-2">{{ $t("join-community") }}</h2>
+        <h2 class="success--text">
+          {{ $t("join-community") }}
+        </h2>
         <p>
           {{ $t("bitcartcc-not-a-company") }}
         </p>
