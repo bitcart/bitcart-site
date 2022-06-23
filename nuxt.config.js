@@ -8,8 +8,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: "BitcartCC",
-    title: "BitcartCC",
+    title: "BitcartCC - non-custodial crypto payments processor",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -76,8 +75,11 @@ export default {
   pwa: {
     meta: {
       theme_color: "#4CAF50",
+      name: "BitcartCC",
       ogHost: "https://bitcartcc.com",
       twitterCard: "summary",
+      twitterSite: "@BitcartCC",
+      twitterCreator: "@BitcartCC",
     },
   },
   vuetify: {

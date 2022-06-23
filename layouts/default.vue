@@ -96,7 +96,14 @@ export default {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
     return {
       htmlAttrs: i18nHead.htmlAttrs,
-      meta: i18nHead.meta,
+      meta: [
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: this.$config.domain + this.$icon(512),
+        },
+        ...i18nHead.meta,
+      ],
       link: [
         {
           rel: "preload",
