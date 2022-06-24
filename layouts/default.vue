@@ -24,6 +24,7 @@
     <v-app-bar clipped-left fixed app>
       <v-app-bar-nav-icon
         v-if="$mq === 'mobile'"
+        :aria-label="$t('menu')"
         @click.stop="drawer = !drawer"
       />
       <v-img
