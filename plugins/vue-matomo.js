@@ -6,8 +6,10 @@ export default ({ app, $config }) => {
     Vue.use(VueMatomo, {
       router: app.router,
       siteId: $config.matomoID,
-      host: $config.matomoURL,
+      trackerUrl: $config.matomoURL,
+      trackerScriptUrl: $config.matomoScriptURL,
       enableHeartBeatTimer: true,
+      preInitActions: $config.matomoActions.split(";").map((x) => [x]),
     })
   }
 }

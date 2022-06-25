@@ -31,6 +31,8 @@ export default {
     domain: process.env.BITCART_DOMAIN || "http://localhost:3000",
     store: process.env.BITCART_STORE || "1",
     matomoURL: process.env.MATOMO_URL || "",
+    matomoScriptURL: process.env.MATOMO_SCRIPT_URL || "",
+    matomoActions: process.env.MATOMO_ACTIONS || "",
     matomoID: parseInt(process.env.MATOMO_ID || "1"),
   },
   /*
