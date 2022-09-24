@@ -6,7 +6,7 @@
   "what-is-bitcartcc": "What is BitcartCC",
   "bitcartcc-opensource-free": "BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free.",
   "receive-crypto": "Receive cryptocurrency and token payments without any fees or third-party involvement. You are your own bank. Funds go directly to your wallet; your private key is never required.",
-  "supported-currencies": "We support classical blockchains like Bitcoin, Bitcoin Cash, Litecoin and others, as well as EVM-based blockchains (Ethereum, Binance Smart Chain) and token platforms like ERC20, BEP20 and others.",
+  "supported-currencies": "We support classical blockchains like Bitcoin, Bitcoin Cash, Litecoin and others, as well as smart contract platforms (Ethereum, Binance Smart Chain, Tron) and token platforms like ERC20, BEP20, TRC20 and others.",
   "live-demo": "Live Demo",
   "donate": "Donate",
   "support-as-a-company": "Support as a company",

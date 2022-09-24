@@ -8,7 +8,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "BitcartCC - non-custodial crypto payments processor",
+    title: "BitcartCC - Non-Custodial Crypto Payments Processor",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
