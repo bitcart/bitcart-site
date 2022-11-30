@@ -10,6 +10,7 @@ const LANGUAGE_NAMES = {
   pl: "Polski",
   ru: "Русский",
   hi: "हिंदी",
+  es: "Español",
 }
 
 const settings = {
