@@ -10,7 +10,12 @@ echo "Downloading $DOWNLOAD_URL"
 TEMP_DIR=$(mktemp -d 2>/dev/null || mktemp -d -t 'mytmpdir')
 curl -L "$DOWNLOAD_URL" -o $TEMP_DIR/tx.tar.gz
 tar -C $TEMP_DIR -xvf $TEMP_DIR/tx.tar.gz
-mv $TEMP_DIR/tx /usr/bin/tx
-chmod +x /usr/bin/tx
+if [ "$NETLIFY" = "true" ]; then
+  mv $TEMP_DIR/tx /opt/buildhome/.local/bin/tx
+  chmod +x /opt/buildhome/.local/bin/tx
+else
+  mv $TEMP_DIR/tx /usr/local/bin/tx
+  chmod +x /usr/local/bin/tx
+fi
 rm -rf $TEMP_DIR
 set +e
