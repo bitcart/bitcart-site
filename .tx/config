@@ -1,9 +1,9 @@
 [main]
 host = https://www.transifex.com
 
-[bitcartcc-website.en-json]
-file_filter = locales/<lang>.json
-minimum_perc = 5
-source_file = locales/en.json
-source_lang = en
-type = KEYVALUEJSON
+[o:bitcartcc:p:bitcartcc-website:r:en-json]
+file_filter   = locales/<lang>.json
+source_file   = locales/en.json
+type          = KEYVALUEJSON
+minimum_perc  = 5
+resource_name = en-json
