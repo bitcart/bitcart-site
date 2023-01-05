@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -e
+pip install transifex-client
+echo whereis tx
 OS=$(uname -s)
 ARCH=$(uname -m)
 if [[ "$ARCH" == "x86_64" ]]; then
