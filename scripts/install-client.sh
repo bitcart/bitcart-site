@@ -10,7 +10,7 @@ echo "Downloading $DOWNLOAD_URL"
 TEMP_DIR=$(mktemp -d 2>/dev/null || mktemp -d -t 'mytmpdir')
 curl -L "$DOWNLOAD_URL" -o $TEMP_DIR/tx.tar.gz
 tar -C $TEMP_DIR -xvf $TEMP_DIR/tx.tar.gz
-sudo mv $TEMP_DIR/tx /usr/local/bin/tx
-sudo chmod +x /usr/local/bin/tx
+mv $TEMP_DIR/tx /usr/local/bin/tx
+chmod +x /usr/local/bin/tx
 rm -rf $TEMP_DIR
 set +e

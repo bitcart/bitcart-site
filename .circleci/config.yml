@@ -16,7 +16,7 @@ jobs:
       - run:
           name: publish locale source
           command: |
-            scripts/install-client.sh
+            sudo scripts/install-client.sh
             tx push -s
 
 workflows:
