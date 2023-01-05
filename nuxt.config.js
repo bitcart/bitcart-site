@@ -1,4 +1,10 @@
+import crypto from "crypto"
 import i18n from "./i18n.js"
+
+// Patch for webpack4 on nodejs 17+
+const origCreateHash = crypto.createHash
+crypto.createHash = (algorithm) =>
+  origCreateHash(algorithm === "md4" ? "sha256" : algorithm)
 
 export default {
   telemetry: false,
