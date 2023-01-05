@@ -16,7 +16,7 @@ jobs:
       - run:
           name: publish locale source
           command: |
-            pip install transifex-client
+            scripts/install-client.sh
             tx push -s
 
 workflows:
