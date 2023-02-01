@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://bitcartcc.com/schemas/plugin/1.1.0/plugin.schema.json",
+  "title": "Plugin",
+  "description": "Plugin metadata",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Plugin name",
+      "type": "string"
+    },
+    "author": {
+      "description": "Plugin author. Used to install namespaced packages",
+      "type": "string"
+    },
+    "version": {
+      "description": "Plugin version",
+      "type": "string"
+    },
+    "license": {
+      "description": "Plugin license",
+      "type": "string"
+    },
+    "website": {
+      "description": "Plugin website",
+      "type": "string"
+    },
+    "source_url": {
+      "description": "Plugin source code URL",
+      "type": "string"
+    },
+    "docs_url": {
+      "description": "Plugin documentation URL",
+      "type": "string"
+    },
+    "description": {
+      "description": "Plugin description",
+      "type": "string"
+    },
+    "constraints": {
+      "description": "Plugin constraints",
+      "type": "object",
+      "properties": {
+        "bitcartcc": {
+          "description": "BitcartCC version constraint",
+          "type": "string"
+        }
+      },
+      "required": ["bitcartcc"]
+    },
+    "installs": {
+      "description": "Plugin installable parts",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "description": "Installation type",
+            "type": "string",
+            "enum": ["admin", "store", "backend", "docker"]
+          },
+          "path": {
+            "description": "Installation path",
+            "type": "string"
+          }
+        },
+        "required": ["type", "path"]
+      }
+    }
+  },
+  "required": ["name", "author", "version", "constraints", "installs"]
+}
