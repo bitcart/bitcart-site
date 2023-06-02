@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://bitcartcc.com/*"
+  to = "https://bitcart.ai/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.bitcartcc.com/*"
+  to = "https://www.bitcart.ai/:splat"
+  status = 301
+  force = true
