@@ -14,7 +14,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "BitcartCC - Non-Custodial Crypto Payments Processor",
+    title: "Bitcart - Non-Custodial Crypto Payments Processor",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -83,8 +83,8 @@ export default {
   pwa: {
     meta: {
       theme_color: "#4CAF50",
-      name: "BitcartCC",
-      ogHost: "https://bitcartcc.com",
+      name: "Bitcart",
+      ogHost: "https://bitcart.ai",
       twitterCard: "summary",
       twitterSite: "@BitcartCC",
       twitterCreator: "@BitcartCC",
@@ -122,7 +122,7 @@ export default {
     },
   },
   sitemap: {
-    hostname: "https://bitcartcc.com",
+    hostname: "https://bitcart.ai",
     routes: ["/supporters.json"],
   },
   generate: {
