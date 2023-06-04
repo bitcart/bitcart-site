@@ -7,7 +7,7 @@ export default function (i18n) {
       links: [
         {
           text: i18n.t("feature-1-links-1"),
-          url: "https://admin.bitcartcc.com",
+          url: "https://admin.bitcart.ai",
         },
       ],
     },
@@ -28,15 +28,15 @@ export default function (i18n) {
       links: [
         {
           text: i18n.t("feature-4-links-1"),
-          url: "https://admin.bitcartcc.com",
+          url: "https://admin.bitcart.ai",
         },
         {
           text: i18n.t("feature-4-links-2"),
-          url: "https://store.bitcartcc.com",
+          url: "https://store.bitcart.ai",
         },
         {
           text: i18n.t("feature-4-links-3"),
-          url: "https://api.bitcartcc.com",
+          url: "https://api.bitcart.ai",
         },
       ],
     },
@@ -47,7 +47,7 @@ export default function (i18n) {
       links: [
         {
           text: i18n.t("feature-5-links-1"),
-          url: "https://github.com/bitcartcc/bitcart",
+          url: "https://github.com/bitcart/bitcart",
         },
       ],
     },
@@ -62,7 +62,7 @@ export default function (i18n) {
         },
         {
           text: i18n.t("feature-6-links-2"),
-          url: "https://docs.bitcartcc.com/guides/lightning",
+          url: "https://docs.bitcart.ai/guides/lightning",
         },
       ],
     },
@@ -73,11 +73,11 @@ export default function (i18n) {
       links: [
         {
           text: i18n.t("feature-7-links-1"),
-          url: "https://configurator.bitcartcc.com",
+          url: "https://configurator.bitcart.ai",
         },
         {
           text: i18n.t("feature-7-links-2"),
-          url: "https://docs.bitcartcc.com/deployment/deployment",
+          url: "https://docs.bitcart.ai/deployment/deployment",
         },
       ],
     },
@@ -100,15 +100,15 @@ export default function (i18n) {
       links: [
         {
           text: i18n.t("feature-9-links-1"),
-          url: "https://sdk.bitcartcc.com",
+          url: "https://sdk.bitcart.ai",
         },
         {
           text: i18n.t("feature-9-links-2"),
-          url: "https://github.com/bitcartcc/bitcart-sdk/tree/master/examples/atomic_tipbot",
+          url: "https://github.com/bitcart/bitcart-sdk/tree/master/examples/atomic_tipbot",
         },
         {
           text: i18n.t("feature-9-links-3"),
-          url: "https://github.com/bitcartcc/bitcart-sdk/tree/master/examples",
+          url: "https://github.com/bitcart/bitcart-sdk/tree/master/examples",
         },
       ],
     },
@@ -119,11 +119,11 @@ export default function (i18n) {
       links: [
         {
           text: i18n.t("feature-10-links-1"),
-          url: "https://raw.githubusercontent.com/bitcartcc/bitcart-docs/master/.gitbook/assets/bitcartcc_structure.png",
+          url: "https://raw.githubusercontent.com/bitcart/bitcart-docs/master/.gitbook/assets/bitcartcc_structure.png",
         },
         {
           text: i18n.t("feature-10-links-2"),
-          url: "https://docs.bitcartcc.com/development/architecture",
+          url: "https://docs.bitcart.ai/development/architecture",
         },
       ],
     },

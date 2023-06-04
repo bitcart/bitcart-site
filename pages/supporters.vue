@@ -5,7 +5,7 @@
         {{ $t("companies-support-perks") }}
         <br />
         {{ $t("support-bitcartcc-as-company") }}
-        <a href="mailto:company@bitcartcc.com">{{ $t("email-us") }}</a
+        <a href="mailto:company@bitcart.ai">{{ $t("email-us") }}</a
         >.
       </p>
     </v-row>

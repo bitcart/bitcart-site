@@ -10,7 +10,7 @@
             }"
             class="success--text pb-8 font-weight-bold"
           >
-            BitcartCC
+            Bitcart
           </h1>
           <h2>
             {{ $t("start-accepting-crypto") }}
@@ -35,7 +35,7 @@
         <div>
           <v-btn
             class="success"
-            href="https://admin.bitcartcc.com"
+            href="https://admin.bitcart.ai"
             target="blank_"
           >
             {{ $t("live-demo") }}
@@ -106,7 +106,7 @@ export default {
   head() {
     return {
       script: [
-        { src: "https://admin.bitcartcc.com/modal/bitcart.js", async: true }, // include modal script from BitcartCC Admin instance
+        { src: "https://admin.bitcart.ai/modal/bitcart.js", async: true }, // include modal script from Bitcart Admin instance
       ],
     }
   },
@@ -124,7 +124,7 @@ export default {
       this.price = 5 // 5$
       this.loading = true
       this.$axios
-        .post("https://api.bitcartcc.com/invoices", {
+        .post("https://api.bitcart.ai/invoices", {
           store_id: this.$config.store,
           price: this.price,
         })

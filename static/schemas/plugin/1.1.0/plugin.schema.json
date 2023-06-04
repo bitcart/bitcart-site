@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema",
-  "$id": "https://bitcartcc.com/schemas/plugin/1.1.0/plugin.schema.json",
+  "$id": "https://bitcart.ai/schemas/plugin/1.1.0/plugin.schema.json",
   "title": "Plugin",
   "description": "Plugin metadata",
   "type": "object",

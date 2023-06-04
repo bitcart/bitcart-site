@@ -1,4 +1,4 @@
-# bitcartcc
+# bitcart
 
 > A project to simplify cryptocurrencies integration
 

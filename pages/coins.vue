@@ -34,11 +34,11 @@ export default {
     },
   },
   beforeMount() {
-    this.$axios.get("https://api.bitcartcc.com/cryptos/supported").then((r) => {
+    this.$axios.get("https://api.bitcart.ai/cryptos/supported").then((r) => {
       this.currencies = r.data
       for (const currency in this.currencies) {
         this.$axios
-          .get(`https://api.bitcartcc.com/cryptos/tokens/${currency}`)
+          .get(`https://api.bitcart.ai/cryptos/tokens/${currency}`)
           .then((r) => this.$set(this.tokenList, currency, r.data.result))
       }
     })

@@ -61,17 +61,17 @@
       </v-container>
     </v-main>
     <v-footer fixed app class="justify-center">
-      <span>&copy; BitcartCC 2018-{{ new Date().getFullYear() }}</span>
+      <span>&copy; Bitcart 2018-{{ new Date().getFullYear() }}</span>
     </v-footer>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "BitcartCC",
-        "url": "https://bitcartcc.com",
+        "name": "Bitcart",
+        "url": "https://bitcart.ai",
         "sameAs": [
           "https://twitter.com/BitcartCC",
-          "https://github.com/bitcartcc",
+          "https://github.com/bitcart",
           "https://reddit.com/r/BitcartCC",
           "https://linkedin.com/company/bitcartcc",
           "https://instagram.com/bitcartcc"
@@ -90,7 +90,7 @@ export default {
   data() {
     return {
       drawer: false,
-      title: "BitcartCC",
+      title: "Bitcart",
     }
   },
   head() {
@@ -143,17 +143,17 @@ export default {
         },
         {
           text: this.$t("docs"),
-          to: "https://docs.bitcartcc.com",
+          to: "https://docs.bitcart.ai",
           external: true,
         },
         {
           text: this.$t("blog"),
-          to: "https://blog.bitcartcc.com",
+          to: "https://blog.bitcart.ai",
           external: true,
         },
         {
           text: this.$t("github"),
-          to: "https://github.com/bitcartcc/bitcart",
+          to: "https://github.com/bitcart/bitcart",
           external: true,
         },
         {
@@ -162,12 +162,12 @@ export default {
         },
         {
           text: this.$t("easy-launch"),
-          to: "https://configurator.bitcartcc.com",
+          to: "https://configurator.bitcart.ai",
           external: true,
         },
         {
           text: this.$t("roadmap"),
-          to: "https://github.com/orgs/bitcartcc/projects/1",
+          to: "https://github.com/orgs/bitcart/projects/1",
           external: true,
         },
       ]
