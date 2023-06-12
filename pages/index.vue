@@ -21,10 +21,10 @@
     <v-row class="mb-5">
       <v-col cols="12" md="6">
         <h2 class="success--text">
-          {{ $t("what-is-bitcartcc") }}
+          {{ $t("what-is-bitcart") }}
         </h2>
         <p>
-          {{ $t("bitcartcc-opensource-free") }}
+          {{ $t("bitcart-opensource-free") }}
         </p>
         <p>
           {{ $t("receive-crypto") }}
@@ -54,7 +54,7 @@
           {{ $t("join-community") }}
         </h2>
         <p>
-          {{ $t("bitcartcc-not-a-company") }}
+          {{ $t("bitcart-not-a-company") }}
         </p>
         <div class="d-flex flex-row flex-wrap justify-space-between">
           <v-btn

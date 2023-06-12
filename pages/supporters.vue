@@ -4,7 +4,7 @@
       <p class="text-h5">
         {{ $t("companies-support-perks") }}
         <br />
-        {{ $t("support-bitcartcc-as-company") }}
+        {{ $t("support-bitcart-as-company") }}
         <a href="mailto:company@bitcart.ai">{{ $t("email-us") }}</a
         >.
       </p>

@@ -5,7 +5,7 @@ export default function (i18n) {
   return [
     {
       name: i18n.t("communities-1"),
-      url: "https://t.me/bitcartcc",
+      url: "https://t.me/bitcart",
       component: TelegramIcon,
     },
     {
@@ -20,12 +20,12 @@ export default function (i18n) {
     },
     {
       name: i18n.t("communities-5"),
-      url: "https://matrix.to/#/#bitcartcc:matrix.org",
+      url: "https://matrix.to/#/#bitcart:matrix.org",
       component: MatrixIcon,
     },
     {
       name: i18n.t("communities-4"),
-      url: "https://www.reddit.com/r/BitcartCC",
+      url: "https://www.reddit.com/r/Bitcart",
       icon: "$mdiReddit",
     },
   ]
