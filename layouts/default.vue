@@ -73,7 +73,7 @@
           "https://twitter.com/BitcartCC",
           "https://github.com/bitcart",
           "https://reddit.com/r/Bitcart",
-          "https://linkedin.com/company/bitcartcc",
+          "https://linkedin.com/company/bitcart",
           "https://instagram.com/bitcartcc"
         ]
       }
