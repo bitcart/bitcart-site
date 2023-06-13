@@ -10,13 +10,7 @@
         >
           {{ item.icon }}
         </v-icon>
-        <v-img
-          v-else
-          :src="item.image"
-          max-width="150px"
-          max-height="150px"
-          contain
-        >
+        <v-img v-else :src="item.image" width="150px" height="150px" contain>
         </v-img>
       </v-card-title>
       <v-card-text>
@@ -24,7 +18,7 @@
           <v-col cols="12" class="text-center text-h6 feature-font">
             {{ item.text }}
           </v-col>
-          <v-col v-if="item.moreText" cols="12">
+          <v-col v-if="item.moreText" cols="12" class="text-center">
             {{ item.moreText }}
           </v-col>
         </v-row>

@@ -3,5 +3,11 @@
     "name": "Iwando LLC",
     "image": "/supporters/iwando.webp",
     "website": "https://iwando.com"
+  },
+  {
+    "name": "Servers Guru",
+    "image": "/supporters/serversguru.svg",
+    "text": "Helps with hosting our infrastructure",
+    "website": "https://servers.guru"
   }
 ]

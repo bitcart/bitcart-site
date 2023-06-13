@@ -40,6 +40,7 @@ export default {
               url: supporter.website,
             },
           ],
+          moreText: supporter.text,
         }
       })
     },
