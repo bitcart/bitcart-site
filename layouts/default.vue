@@ -31,8 +31,7 @@
         max-height="60"
         max-width="60"
         contain
-        src="/icon.svg"
-        :style="logoStyle"
+        src="/logo.svg"
         class="mr-2"
         @click="goHome"
       />
@@ -132,9 +131,6 @@ export default {
     }
   },
   computed: {
-    logoStyle() {
-      return this.$vuetify.theme.dark ? "filter: invert(1)" : ""
-    },
     toolbarItems() {
       return [
         {
