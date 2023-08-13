@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[o:bitcartcc:p:bitcartcc-website:r:en-json]
+[o:bitcart:p:bitcart-website:r:en-json]
 file_filter   = locales/<lang>.json
 source_file   = locales/en.json
 type          = KEYVALUEJSON

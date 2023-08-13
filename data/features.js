@@ -119,7 +119,7 @@ export default function (i18n) {
       links: [
         {
           text: i18n.t("feature-10-links-1"),
-          url: "https://raw.githubusercontent.com/bitcart/bitcart-docs/master/.gitbook/assets/bitcartcc_structure.png",
+          url: "https://raw.githubusercontent.com/bitcart/bitcart-docs/master/.gitbook/assets/bitcart_structure.png",
         },
         {
           text: i18n.t("feature-10-links-2"),

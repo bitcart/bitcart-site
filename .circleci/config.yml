@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  bitcartcc: bitcartcc/bitcartcc-shared@1
+  bitcart: bitcart/bitcart-shared@2
 
 jobs:
   publish:
@@ -23,12 +23,12 @@ workflows:
   version: 2
   test:
     jobs:
-      - bitcartcc/lint:
+      - bitcart/lint:
           name: lint
-          executor: bitcartcc/python-node
+          executor: bitcart/python-node
           pre-steps:
             - checkout
-            - bitcartcc/install-node-dependencies
+            - bitcart/install-node-dependencies
       - publish:
           context: global
           requires:
