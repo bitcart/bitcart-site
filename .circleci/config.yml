@@ -6,7 +6,7 @@ orbs:
 jobs:
   publish:
     docker:
-      - image: cimg/python:3.8
+      - image: cimg/python:3.12
 
     working_directory: ~/repo
 
