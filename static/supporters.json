@@ -9,5 +9,11 @@
     "image": "/supporters/serversguru.svg",
     "text": "Helps with hosting our infrastructure",
     "website": "https://servers.guru"
+  },
+  {
+    "name": "HelloRDP",
+    "image": "/supporters/hellordp.svg",
+    "text": "Helps with hosting our staging/testnet infrastructure",
+    "website": "https://hellordp.com"
   }
 ]
