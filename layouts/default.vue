@@ -32,10 +32,10 @@
         max-width="60"
         contain
         src="/logo.svg"
-        class="mr-2"
+        class="mr-2 cursor-pointer"
         @click="goHome"
       />
-      <v-toolbar-title @click="goHome" v-text="title" />
+      <v-toolbar-title class="cursor-pointer" @click="goHome" v-text="title" />
       <v-spacer />
       <v-toolbar-items v-if="$mq === 'desktop'">
         <v-btn
@@ -188,3 +188,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+</style>
