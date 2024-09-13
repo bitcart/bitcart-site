@@ -125,7 +125,7 @@ export default {
       this.loading = true
       this.$axios
         .post("https://api.bitcart.ai/invoices", {
-          store_id: this.$config.store,
+          store_id: this.$config.store.toString(),
           price: this.price,
         })
         .then((res) => {
