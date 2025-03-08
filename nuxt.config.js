@@ -27,6 +27,9 @@ export default {
       },
     ],
   },
+  gtm: {
+    pageTracking: true,
+  },
   publicRuntimeConfig: {
     domain: process.env.BITCART_DOMAIN || "http://localhost:3000",
     store: process.env.BITCART_STORE || "1",
