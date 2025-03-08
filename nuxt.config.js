@@ -34,6 +34,9 @@ export default {
     matomoScriptURL: process.env.MATOMO_SCRIPT_URL || "",
     matomoActions: process.env.MATOMO_ACTIONS || "",
     matomoID: parseInt(process.env.MATOMO_ID || "1"),
+    gtm: {
+      id: process.env.GOOGLE_TAG_MANAGER_ID,
+    },
   },
   /*
    ** Customize the progress-bar color
@@ -64,6 +67,7 @@ export default {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@nuxtjs/sitemap",
+    "@nuxtjs/gtm",
   ],
   /*
    ** Axios module configuration

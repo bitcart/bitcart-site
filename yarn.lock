@@ -1818,6 +1818,14 @@
     defu "^6.0.0"
     eslint-webpack-plugin "^2.6.0"
 
+"@nuxtjs/gtm@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/gtm/-/gtm-2.4.0.tgz#d7f5bb05b0306c564674831eab17b4e25cfdc1f6"
+  integrity sha512-Of5KuBBFwRjyJ6AuRrIQsh8J6ksIN2UegJDE8nBiTAanbwQBsAJ0hZibV9SjhKdGvGvWpbShQ4yR2bmQgY6XKA==
+  dependencies:
+    chalk "^4.1.0"
+    semver "^7.3.2"
+
 "@nuxtjs/i18n@^7.0.3":
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/@nuxtjs/i18n/-/i18n-7.3.1.tgz#b8654783cced280899697458186a0bf38be4d4b8"
@@ -5726,7 +5734,7 @@ jest-worker@^27.5.1:
     supports-color "^8.0.0"
 
 jimp-compact@^0.16.1:
-  version "0.16.2"
+  version "0.16.1"
   resolved "https://registry.yarnpkg.com/jimp-compact/-/jimp-compact-0.16.2.tgz#650bf90698eb7af797e20bf5f5cdccd137e7d08a"
   integrity sha512-F/r0L283J46xiGUEvUb3jxUsei7aB94g3NRIMuJ4WhbpEcJV2U5GpaUNJLnBiOP2+x4lLTI4UiRVrmbrXQAOMA==
 
