@@ -29,6 +29,7 @@ export default {
   },
   gtm: {
     pageTracking: true,
+    scriptURL: "https://www.googletagmanager.com/gtag/js",
   },
   publicRuntimeConfig: {
     domain: process.env.BITCART_DOMAIN || "http://localhost:3000",
