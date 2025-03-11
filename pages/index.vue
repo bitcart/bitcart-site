@@ -2,6 +2,55 @@
   <v-container>
     <v-row>
       <v-col>
+        <v-alert
+          prominent
+          type="info"
+          :icon="false"
+          class="mb-5 announcement-alert"
+          elevation="2"
+          :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
+        >
+          <v-row align="center">
+            <v-col cols="auto" class="mr-3">
+              <v-icon size="36" color="success">$mdiRocketLaunchOutline</v-icon>
+            </v-col>
+            <v-col>
+              <div class="text-h6 font-weight-bold mb-1 success--text">
+                🎉 ETH Payments Plugin Released!
+              </div>
+              <div
+                class="announcement-text"
+                :class="$vuetify.theme.dark ? 'white--text' : 'black--text'"
+              >
+                Accept payments in
+                <span class="font-weight-bold">ETH, TRX, BNB, MATIC</span> and
+                stablecoins like
+                <span class="font-weight-bold">USDT, USDC</span> and any other
+                token without address prompt, non-custodially and saving on
+                fees!
+              </div>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <div class="mt-2 d-flex align-center">
+                <div class="success--text font-weight-bold">
+                  Available now in your Admin Panel's Plugins page
+                </div>
+                <v-btn
+                  color="success"
+                  small
+                  class="white--text ml-4"
+                  href="https://t.me/bitcart/63625"
+                  target="_blank"
+                >
+                  <v-icon left small>$mdiOpenInNew</v-icon>
+                  View full announcement
+                </v-btn>
+              </div>
+            </v-col>
+          </v-row>
+        </v-alert>
         <div class="mb-5 title-group">
           <h1
             :class="{
@@ -144,6 +193,15 @@ h2 {
 .title-group {
   h2 {
     margin-top: -30px;
+  }
+}
+
+.announcement-alert {
+  border-left: 4px solid #39833f;
+
+  .announcement-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
 }
 </style>
