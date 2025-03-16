@@ -27,10 +27,6 @@ export default {
       },
     ],
   },
-  gtm: {
-    pageTracking: true,
-    scriptURL: "https://www.googletagmanager.com/gtag/js",
-  },
   publicRuntimeConfig: {
     domain: process.env.BITCART_DOMAIN || "http://localhost:3000",
     store: process.env.BITCART_STORE || "1",
@@ -38,9 +34,6 @@ export default {
     matomoScriptURL: process.env.MATOMO_SCRIPT_URL || "",
     matomoActions: process.env.MATOMO_ACTIONS || "",
     matomoID: parseInt(process.env.MATOMO_ID || "1"),
-    gtm: {
-      id: process.env.GOOGLE_TAG_MANAGER_ID,
-    },
   },
   /*
    ** Customize the progress-bar color
@@ -71,7 +64,6 @@ export default {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@nuxtjs/sitemap",
-    "@nuxtjs/gtm",
   ],
   /*
    ** Axios module configuration
