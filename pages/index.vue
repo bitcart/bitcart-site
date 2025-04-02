@@ -11,7 +11,7 @@
           :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
         >
           <v-row align="center">
-            <v-col cols="auto" class="mr-3">
+            <v-col cols="auto" class="mr-md-3 mr-0">
               <v-icon size="36" color="success">$mdiRocketLaunchOutline</v-icon>
             </v-col>
             <v-col>
@@ -32,21 +32,33 @@
             </v-col>
           </v-row>
           <v-row>
-            <v-col>
-              <div class="mt-2 d-flex align-center">
-                <div class="success--text font-weight-bold">
+            <v-col cols="12">
+              <div class="mt-2 d-flex flex-column flex-sm-row align-sm-center">
+                <div class="success--text font-weight-bold mb-2 mb-sm-0">
                   Available now in your Admin Panel's Plugins page
                 </div>
-                <v-btn
-                  color="success"
-                  small
-                  class="white--text ml-4"
-                  href="https://t.me/bitcart/63625"
-                  target="_blank"
-                >
-                  <v-icon left small>$mdiOpenInNew</v-icon>
-                  View full announcement
-                </v-btn>
+                <div class="d-flex flex-wrap mt-1 mt-sm-0">
+                  <v-btn
+                    color="success"
+                    small
+                    class="white--text ml-sm-4 mr-2 mb-2 mb-sm-0"
+                    href="https://docs.bitcart.ai/guides/eth-payments-plugin"
+                    target="_blank"
+                  >
+                    <v-icon left small>$mdiOpenInNew</v-icon>
+                    View user guide
+                  </v-btn>
+                  <v-btn
+                    color="success"
+                    small
+                    class="white--text mb-2 mb-sm-0"
+                    href="https://t.me/bitcart/63625"
+                    target="_blank"
+                  >
+                    <v-icon left small>$mdiOpenInNew</v-icon>
+                    View announcement
+                  </v-btn>
+                </div>
               </div>
             </v-col>
           </v-row>
