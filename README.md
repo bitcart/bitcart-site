@@ -3,7 +3,7 @@
 > A project to simplify cryptocurrencies integration
 
 > [!NOTE]
-> This is the old Bitcart website. The new and improved website lives in the [bitcart-frontend](https://github.com/bitcart/bitcart-frontend) monorepo. This repository is archived.
+> This is the old Bitcart website. The new and improved website lives in the [bitcart-frontend](https://github.com/bitcart/bitcart-frontend/tree/master/apps/landing) monorepo. This repository is archived.
 
 ## Build Setup
 
